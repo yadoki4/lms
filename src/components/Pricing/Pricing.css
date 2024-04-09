@@ -1,0 +1,28 @@
+@media screen and (max-width: 1065px) and (min-width: 600px) {
+  .Cards {
+    width: 50%;
+    margin-top: 0;
+  }
+  .Card2 {
+    display: none;
+  }
+  .Card3 {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 200px) {
+  .ParentCard {
+    flex-direction: column;
+  }
+  .Cards {
+    width: 100%;
+  }
+  .Card2 {
+    width: 100%;
+  }
+  .MarCard {
+    margin-top: 0;
+  }
+}

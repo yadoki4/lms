@@ -1,0 +1,63 @@
+@media screen and (max-width: 767px) and (min-width: 300px) {
+  .landing {
+    flex-direction: column;
+  }
+  .box1 {
+    width: 100%;
+  }
+  .box2 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .hide {
+    display: none;
+  }
+  .form {
+    padding: 40px 0;
+  }
+  .forminner {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 380px) and (min-width: 200px) {
+  .small {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 815px) and (min-width: 150px) {
+  .python {
+    padding: 25px 0;
+  }
+  .boxes3 {
+    flex-direction: column;
+  }
+  .small {
+    background-color: rgb(251, 133, 0);
+    border-radius: 12px;
+  }
+}
+
+@media screen and (max-width: 549px) and (min-width: 300px) {
+  .gappa {
+    display: none;
+  }
+  .text {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 999px) and (min-width: 300px) {
+  .contain {
+    flex-direction: column;
+    align-items: center;
+  }
+  .containimg {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1160px) and (min-width: 300px) {
+  .kids {
+    flex-wrap: wrap;
+    margin-left: 10px;
+  }
+}
