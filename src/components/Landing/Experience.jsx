@@ -3,12 +3,7 @@ import React from "react";
 const Experience = () => {
   return (
     <div className="bg-white justify-center items-center mt-14 flex flex-col gap-4 ">
-      <div className=" flex   bg-white rounded-lg mt-4  ">
-        <p className="font-poppins text-[#2B2D42] font-semibold text-4xl text-center">
-          “Yeni nesil öğrenimi Ücretsiz Deneme 
-          <span className="text-[#FB8500]">Dersi ile keşfedin.</span>”
-        </p>
-      </div>
+     
       <div className=" flex  bg-white rounded-lg mt-4  ">
         <p className="text-center text-[#2B2D42] font-poppins font-medium text-xl">
           Embark on an exhilarating coding adventure with our complimentary
@@ -20,8 +15,8 @@ const Experience = () => {
       </div>
       <div className=" flex boxes3 gap-3 justify-center rounded-lg mt-14  ">
         <div className="flex w-72 flex-1 flex-col gap-6 bg-orange-logo px-8 py-12 rounded-xl">
-          <div className="flex justify-center items-center">
-            <img src="/assets/one.svg"></img>
+          <div className="flex justify-center items-center bg-[#dedede] self-center w-12 rounded-full h-12  text-2xl ">
+            1
           </div>
           <div>
             <p className="text-center font-poppins text-[#FFFFFF]   font-semibold text-lg">
@@ -37,10 +32,10 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-1 flex-col  px-8 py-12 small  justify-center items-center">
-          <div className="bg-orange-logo flex flex-col gap-6 px-10 rounded-2xl py-4">
-            <div className="flex justify-center items-center">
-              <img src="/assets/two.svg"></img>
-            </div>
+          <div className="bg-orange-logo flex flex-col gap-6 px-16 rounded-2xl py-8">
+          <div className="flex justify-center items-center bg-[#dedede] self-center w-12 rounded-full h-12  text-2xl ">
+            2
+          </div>
             <div>
               <p className="text-center font-poppins text-[#FFFFFF]   font-semibold text-lg">
               Ders
@@ -53,9 +48,9 @@ const Experience = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-1 flex-col gap-6 bg-orange-logo px-8 py-12 rounded-xl">
-          <div className="flex justify-center items-center">
-            <img src="/assets/three.svg"></img>
+        <div className="flex flex-1 flex-col gap-6 bg-orange-logo px-8  py-12 rounded-xl">
+        <div className="flex justify-center items-center bg-[#dedede] self-center w-12 rounded-full h-12  text-2xl ">
+            3
           </div>
           <div>
             <p className="text-center font-poppins text-[#FFFFFF]   font-semibold text-lg">

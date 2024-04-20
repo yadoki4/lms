@@ -4,20 +4,15 @@ import { useNavigate } from "react-router-dom";
 const CoursesSection = () => {
   const navigate = useNavigate();
   return (
-    <div className="bg-orange-1 py-8  mt-16 flex flex-col">
-      <div className=" flex  rounded-lg mt-10 justify-center  items-center">
-        <button
-          onClick={() => {
-            navigate("/pricing");
-          }}
-          className="bg-orange-logo text-white font-poppins font-medium   rounded-xl w-60 h-11
-           justify-center items-center px-2 py-2"
-        >
-          Find Your Plan
-        </button>
+    <div className="bg-[#f3f5fe] py-8  mt-16 flex flex-col">
+      <div className=" flex   justify-center rounded-lg mt-4  ">
+        <p className="font-poppins text-[#2B2D42] font-semibold text-4xl text-center">
+          “Yeni nesil öğrenimi  
+          <span className="text-[#FB8500]"> Ücretsiz Deneme Dersi </span>ile keşfedin.”
+        </p>
       </div>
       <div className="flex flex-wrap justify-between w-11/12  mx-auto rounded-lg mt-10">
-        <div className="flex p-10 h-1/2 mt-4   rounded-lg flex-col bg-[#f3f5fe]">
+        <div className="flex p-10 h-1/2 mt-4   rounded-2xl flex-col bg-orange-1">
           <p className="text-[#5988fe]">YAŞ 5-7</p>
           <div className="flex flex-row justify-between items-center">
             <p>
@@ -55,7 +50,9 @@ const CoursesSection = () => {
 
           <div className="flex justify-center items-center mt-6">
             <button
-              onClick={() => {}}
+                onClick={() => {
+            navigate("/pricing");
+          }}
               className="rounded-xl bg-[#5988fe] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
            justify-center items-center px-2 py-2"
             >
@@ -64,7 +61,7 @@ const CoursesSection = () => {
           </div>
         </div>
 
-        <div className="flex p-10 h-1/2 mt-4   rounded-lg flex-col bg-[#f3f5fe]">
+        <div className="flex p-10 h-1/2 mt-4   rounded-2xl flex-col bg-orange-1">
           <p className="text-[#5988fe]">YAŞ 7-8</p>
           <div className="flex flex-row justify-between items-center">
             <p>
@@ -102,7 +99,9 @@ const CoursesSection = () => {
 
           <div className="flex justify-center items-center mt-6">
             <button
-              onClick={() => {}}
+                onClick={() => {
+            navigate("/pricing");
+          }}
               className="rounded-xl bg-[#5988fe] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
            justify-center items-center px-2 py-2"
             >
@@ -111,7 +110,7 @@ const CoursesSection = () => {
           </div>
         </div>
 
-        <div className="flex p-10 h-1/2 mt-4   rounded-lg flex-col bg-[#f3f5fe]">
+        <div className="flex p-10 h-1/2 mt-4   rounded-2xl flex-col bg-orange-1">
           <p className="text-[#5988fe]">YAŞ 8-11</p>
           <div className="flex flex-row justify-between items-center">
             <p>
@@ -150,7 +149,9 @@ const CoursesSection = () => {
 
           <div className="flex justify-center items-center mt-6">
             <button
-              onClick={() => {}}
+                onClick={() => {
+            navigate("/pricing");
+          }}
               className="rounded-xl bg-[#5988fe] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
            justify-center items-center px-2 py-2"
             >
@@ -160,7 +161,7 @@ const CoursesSection = () => {
         </div>
       </div>
       <div className="flex flex-wrap justify-between  w-11/12 mx-auto   rounded-lg ">
-        <div className="flex p-10 h-1/2 mt-4   rounded-lg flex-col bg-[#f3f5fe]">
+        <div className="flex p-10 h-1/2 mt-4   rounded-2xl flex-col bg-orange-1">
           <p className="text-[#5988fe]">YAŞ 5-7</p>
           <div className="flex flex-row justify-between items-center">
             <p>
@@ -198,7 +199,9 @@ const CoursesSection = () => {
 
           <div className="flex justify-center items-center mt-6">
             <button
-              onClick={() => {}}
+                onClick={() => {
+            navigate("/pricing");
+          }}
               className="rounded-xl bg-[#5988fe] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
            justify-center items-center px-2 py-2"
             >
@@ -207,7 +210,7 @@ const CoursesSection = () => {
           </div>
         </div>
 
-        <div className="flex p-10 h-1/2 mt-4   rounded-lg flex-col bg-[#f3f5fe]">
+        <div className="flex p-10 h-1/2 mt-4   rounded-2xl flex-col bg-orange-1">
           <p className="text-[#5988fe]">YAŞ 7-8</p>
           <div className="flex flex-row justify-between items-center">
             <p>
@@ -245,7 +248,9 @@ const CoursesSection = () => {
 
           <div className="flex justify-center items-center mt-6">
             <button
-              onClick={() => {}}
+                onClick={() => {
+            navigate("/pricing");
+          }}
               className="rounded-xl bg-[#5988fe] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
            justify-center items-center px-2 py-2"
             >
@@ -254,7 +259,7 @@ const CoursesSection = () => {
           </div>
         </div>
 
-        <div className="flex p-10 h-1/2 mt-4   rounded-lg flex-col bg-[#f3f5fe]">
+        <div className="flex p-10 h-1/2 mt-4   rounded-2xl flex-col bg-orange-1">
           <p className="text-[#5988fe]">YAŞ 8-11</p>
           <div className="flex flex-row justify-between items-center">
             <p>Python Start</p>
@@ -289,7 +294,9 @@ const CoursesSection = () => {
 
           <div className="flex justify-center items-center mt-6">
             <button
-              onClick={() => {}}
+                onClick={() => {
+            navigate("/pricing");
+          }}
               className="rounded-xl bg-[#5988fe] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
            justify-center items-center px-2 py-2"
             >

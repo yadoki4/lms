@@ -14,12 +14,18 @@ const RegestrationSection = () => {
     setConfirmPassword(event.target.value);
   };
   return (
-    <div className="bg-orange-1 py-20 form px-20 mt-14 flex flex-col gap-4">
-      <div className=" flex flex-col  mx-24 px-6 py-6 forminner  bg-white">
-        <div>
+    <div className="bg-orange-1 py-20 form px-20 mt-14 flex  flex-col gap-4">
+      <div className=" flex flex-col  mx-24 px-6 py-6 forminner rounded-xl  bg-white">
+        <div className="flex justify-between">
           <p className="font-poppins font-semibold text-[#000000] text-2xl">
             Registration
           </p>
+          <a
+            href="/"
+            className="text-orange-logo text-2xl font-bold font-poppins"
+          >
+            LOGO
+          </a>
         </div>
         <div className="mt-2 flex flex-col gap-3">
           <div className="flex flex-col">

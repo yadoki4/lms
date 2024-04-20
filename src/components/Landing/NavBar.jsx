@@ -25,39 +25,35 @@ const Navbar = () => {
         <div className="flex gap-8">
           {/* Primary Navbar items */}
           <div className="hidden md:flex gap-8">
-            <button   onClick={() => {
+            
+          <div className="flex items-center w-20 h-8 gap-1">
+          {/* Website Logo */}
+          <button  onClick={() => {
             navigate("/");
           }}
-              href=""
-              className="text-gray-800 font-semibold font-poppins"
-            >
-              Home
-            </button>
+            className="text-orange-logo text-2xl font-bold font-poppins"
+          >
+            LOGO
+          </button>
+        </div>
             <a
               href=""
-              className="text-gray-600 font-normal font-poppins"
+              className="text-gray-600 m-1 font-normal font-poppins"
             >
               Courses
             </a>
             <a
               href=""
-              className="text-gray-600  font-normal font-poppins "
+              className="text-gray-600 mt-1 font-normal font-poppins "
             >
               About Us
             </a>
           </div>
         </div>
-        <div className="flex items-center w-20 h-8 gap-1">
-          {/* Website Logo */}
-          <a
-            href="/dashboard/teacher"
-            className="text-orange-logo text-2xl font-bold font-poppins"
-          >
-            LOGO
-          </a>
-        </div>
+        
         {/* Secondary Navbar items */}
         <div className="hidden md:flex items-center gap-8">
+          
           <a
             href=""
             className="text-gray-600 font-normal font-poppins"
@@ -70,12 +66,22 @@ const Navbar = () => {
           >
             Sign in
           </button>
+
           <button
             onClick={toggleSignupModal}
             className="text-gray-600 font-normal font-poppins"
           >
             Sign up
           </button>
+          <button
+                onClick={() => {
+            navigate("/pricing");
+          }}
+              className="rounded-xl bg-[#5988fe] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
+           justify-center items-center px-2 py-2"
+            >
+              Find Your Plan
+            </button>
         </div>
         <div className="hidden md:flex items-center gap-8">
           <div className="relative">
@@ -91,7 +97,17 @@ const Navbar = () => {
           </div>
         </div>
         {/* Mobile menu button */}
-        <div className="md:hidden flex items-center">
+        <div className="md:hidden flex w-full justify-between items-center">
+        <div className=" w-20 h-8 gap-1">
+          {/* Website Logo */}
+          <button  onClick={() => {
+            navigate("/");
+          }}
+            className="text-orange-logo text-2xl font-bold font-poppins"
+          >
+            LOGO
+          </button>
+        </div>
           <button
             className="outline-none mobile-menu-button"
             onClick={toggleMenu}
@@ -116,12 +132,7 @@ const Navbar = () => {
         <div className="md:hidden bg-white">
           <ul className="">
             <li className="active">
-              <a
-                href="index.html"
-                className="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold"
-              >
-                Home
-              </a>
+             
             </li>
             <li>
               <a
@@ -146,6 +157,15 @@ const Navbar = () => {
               >
                 Contact
               </a>
+              <button
+                onClick={() => {
+            navigate("/pricing");
+          }}
+              className="rounded-xl bg-[#5988fe] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
+           justify-center items-center px-2 py-2"
+            >
+              Find Your Plan
+            </button>
             </li>
           </ul>
         </div>

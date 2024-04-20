@@ -42,7 +42,7 @@ const Creativity = () => {
           }`}
         >
           <p className="font-poppins font-semibold text-3xl small text-[#2B2D42] box2">
-            <span className="text-[#FB8500]">Hayal </span> Gücünü
+            <span className="text-[#FB8500]">Hayal Gücünü </span> 
             <br className="hide" /> Kodlamayla Birleştirin!
           </p>
           <p className="font-poppins font-normal text-sm text-[#2B2D42] box2">

@@ -27,7 +27,7 @@ const Pricing = () => {
 
             <div className="flex flex-col justify-center items-center mt-8">
               <p className="font-poppins font-semibold text-4xl text-[#2B2D42]">
-                343 TL
+                343 TL / Lesson
               </p>
               <p className="font-poppins font-normal text-xl text-[#747474]">
                 Güçlü Başlangıç
@@ -67,7 +67,7 @@ const Pricing = () => {
 
             <div className="flex flex-col justify-center items-center mt-8">
               <p className="font-poppins font-semibold text-4xl text-white">
-                311 TL
+                311 TL / Lesson
               </p>
               <p className="font-poppins font-normal text-xl text-white">
                 Güçlü Başlangıç
@@ -108,7 +108,7 @@ const Pricing = () => {
 
             <div className="flex flex-col justify-center items-center mt-8">
               <p className="font-poppins font-semibold text-4xl text-[#2B2D42]">
-                280 TL
+                280 TL / Lesson
               </p>
               <p className="font-poppins font-normal text-xl text-[#747474]">
                 Güçlü Başlangıç
@@ -150,7 +150,7 @@ const Pricing = () => {
 
           <div className="flex flex-col justify-center items-center mt-8">
             <p className="font-poppins font-semibold text-4xl text-[#2B2D42]">
-              280 TL
+              280 TL / Lesson
             </p>
             <p className="font-poppins font-normal text-xl text-[#747474]">
               Güçlü Başlangıç
