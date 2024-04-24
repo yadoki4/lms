@@ -40,13 +40,13 @@ const Navbar = () => {
               href=""
               className="text-gray-600 m-1 font-normal font-poppins"
             >
-              Courses
+              Kurslar
             </a>
             <a
               href=""
               className="text-gray-600 mt-1 font-normal font-poppins "
             >
-              About Us
+              Hakkımızda
             </a>
           </div>
         </div>
@@ -58,20 +58,21 @@ const Navbar = () => {
             href=""
             className="text-gray-600 font-normal font-poppins"
           >
-            Contact
+            İletişim
           </a>
           <button
             onClick={toggleLoginModal}
             className="text-gray-600 font-normal font-poppins"
           >
-            Sign in
+            Giriş Yap
           </button>
 
           <button
             onClick={toggleSignupModal}
             className="text-gray-600 font-normal font-poppins"
           >
-            Sign up
+            Kaydol
+
           </button>
           <button
                 onClick={() => {
@@ -80,14 +81,14 @@ const Navbar = () => {
               className="rounded-xl bg-[#5988fe] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
            justify-center items-center px-2 py-2"
             >
-              Find Your Plan
+              Planlarımızı keşfedin
             </button>
         </div>
         <div className="hidden md:flex items-center gap-8">
           <div className="relative">
             <input
               className="bg-gray-50 text-sm font-normal font-['Poppins] italic ml-1 py-1 pr-8 pl-3 rounded-full border border-gray-4 focus:outline-none focus:border-blue-500"
-              placeholder="I'm looking for..."
+              placeholder="Şunu arıyorum..."
             />
             <img
               src="/assets/search.svg"
@@ -152,10 +153,10 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#contact"
+                href="#İletişim"
                 className="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300"
               >
-                Contact
+                İletişim
               </a>
               <button
                 onClick={() => {
@@ -164,7 +165,7 @@ const Navbar = () => {
               className="rounded-xl bg-[#5988fe] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
            justify-center items-center px-2 py-2"
             >
-              Find Your Plan
+              Planlarımızı keşfedin
             </button>
             </li>
           </ul>

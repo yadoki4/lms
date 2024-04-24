@@ -6,7 +6,7 @@ const EducationPlatformComponent = () => {
   return (
     <div className="flex flex-col items-center bg-gray-100 p-4 md:p-8">
       <div className="text-xl md:text-2xl font-bold text-center mb-4 md:mb-12">
-        "Tailored Solutions for Students and Teachers."
+        "Öğrenciler ve öğretmenler için özel çözümler."
       </div>
       <div className="mb-12 flex md:flex-row flex-col justify-center">
         <div
@@ -46,7 +46,7 @@ const EducationPlatformComponent = () => {
         />
       ) : (
         <TeacherStudentCard
-          mainImg={"/assets/student.svg"}
+          mainImg={"/assets/student.png"}
           title={"Öğrenci Platformu"}
           paragraph={`Öğrenci platformumuz, öğrencilerimizin ek programlar yüklemeye gerek kalmadan kapsamlı kurs içeriklerimize anında erişim sağlamalarını sağlayan kullanıcı dostu bir arayüz sunuyor. Ayrıca, platformumuzda bulunan interaktif online kodlama programı ile öğrencilerimiz, kodlama deneyimlerini kolayca yaşayabilir ve geliştirebilirler. Gelişim takibi, otomatik izleme sistemleri ve her an diğer öğrencilerle etkileşim kurabilecekleri online bir ortam gibi birçok özellik, güvenli ve interaktif bir öğrenme ortamı sunuyor.`}
           t1={"/assets/s1.svg"}

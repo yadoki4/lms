@@ -7,13 +7,13 @@ const CoursesSection = () => {
     <div className="bg-[#f3f5fe] py-8  mt-16 flex flex-col">
       <div className=" flex   justify-center rounded-lg mt-4  ">
         <p className="font-poppins text-[#2B2D42] font-semibold text-4xl text-center">
-          “Yeni nesil öğrenimi  
+          “Yeni nesil kurslarımızı  
           <span className="text-[#FB8500]"> Ücretsiz Deneme Dersi </span>ile keşfedin.”
         </p>
       </div>
       <div className="flex flex-wrap justify-between w-11/12  mx-auto rounded-lg mt-10">
         <div className="flex p-10 h-1/2 mt-4   rounded-2xl flex-col bg-orange-1">
-          <p className="text-[#5988fe]">YAŞ 5-7</p>
+          <p className="text-[#fff] bg-[#fb8500] w-fit p-3">YAŞ 5-7</p>
           <div className="flex flex-row justify-between items-center">
             <p>
               Matematik
@@ -37,14 +37,14 @@ const CoursesSection = () => {
 
           <div className="mt-4 flex flex-col gap-3">
             <div className="flex flex-row gap-4">
-              <p className="bg-white rounded-full w-20 text-center">Mantık</p>
-              <p className="bg-white rounded-full w-20 text-center">Geometri</p>
-              <p className="bg-white rounded-full w-20 text-center">
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Mantık</p>
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Geometri</p>
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">
                 Algoritma
               </p>
             </div>
             <div>
-              <p className="bg-white rounded-full w-20 text-center">Sayma</p>
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Sayma</p>
             </div>
           </div>
 
@@ -53,7 +53,7 @@ const CoursesSection = () => {
                 onClick={() => {
             navigate("/pricing");
           }}
-              className="rounded-xl bg-[#5988fe] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
+              className="rounded-xl bg-[#fb8500] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
            justify-center items-center px-2 py-2"
             >
               Daha fazla öğrenin
@@ -62,7 +62,7 @@ const CoursesSection = () => {
         </div>
 
         <div className="flex p-10 h-1/2 mt-4   rounded-2xl flex-col bg-orange-1">
-          <p className="text-[#5988fe]">YAŞ 7-8</p>
+          <p className="text-[#fff] bg-[#fb8500] w-fit p-3">YAŞ 7-8</p>
           <div className="flex flex-row justify-between items-center">
             <p>
               Matematik
@@ -86,14 +86,14 @@ const CoursesSection = () => {
 
           <div className="mt-4 flex flex-col gap-3">
             <div className="flex flex-row gap-4">
-              <p className="bg-white rounded-full w-20 text-center">Mantık</p>
-              <p className="bg-white rounded-full w-20 text-center">Geometri</p>
-              <p className="bg-white rounded-full w-20 text-center">
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Mantık</p>
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Geometri</p>
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">
                 Algoritma
               </p>
             </div>
             <div>
-              <p className="bg-white rounded-full w-20 text-center">Sayma</p>
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Sayma</p>
             </div>
           </div>
 
@@ -102,7 +102,7 @@ const CoursesSection = () => {
                 onClick={() => {
             navigate("/pricing");
           }}
-              className="rounded-xl bg-[#5988fe] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
+              className="rounded-xl bg-[#fb8500] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
            justify-center items-center px-2 py-2"
             >
               Daha fazla öğrenin
@@ -111,7 +111,7 @@ const CoursesSection = () => {
         </div>
 
         <div className="flex p-10 h-1/2 mt-4   rounded-2xl flex-col bg-orange-1">
-          <p className="text-[#5988fe]">YAŞ 8-11</p>
+          <p className="text-[#fff] bg-[#fb8500] w-fit p-3">YAŞ 8-11</p>
           <div className="flex flex-row justify-between items-center">
             <p>
               Scratch ileÖğretmen Platformu
@@ -136,14 +136,14 @@ const CoursesSection = () => {
 
           <div className="mt-4 flex flex-col gap-3">
             <div className="flex flex-row gap-4">
-              <p className="bg-white rounded-full w-20 text-center">Mantık</p>
-              <p className="bg-white rounded-full w-20 text-center">Geometri</p>
-              <p className="bg-white rounded-full w-20 text-center">
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Mantık</p>
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Geometri</p>
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">
                 Algoritma
               </p>
             </div>
             <div>
-              <p className="bg-white rounded-full w-20 text-center">Sayma</p>
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Sayma</p>
             </div>
           </div>
 
@@ -152,7 +152,7 @@ const CoursesSection = () => {
                 onClick={() => {
             navigate("/pricing");
           }}
-              className="rounded-xl bg-[#5988fe] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
+              className="rounded-xl bg-[#fb8500] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
            justify-center items-center px-2 py-2"
             >
               Daha fazla öğrenin
@@ -162,7 +162,7 @@ const CoursesSection = () => {
       </div>
       <div className="flex flex-wrap justify-between  w-11/12 mx-auto   rounded-lg ">
         <div className="flex p-10 h-1/2 mt-4   rounded-2xl flex-col bg-orange-1">
-          <p className="text-[#5988fe]">YAŞ 5-7</p>
+          <p className="text-[#fff] bg-[#fb8500] w-fit p-3">YAŞ 5-7</p>
           <div className="flex flex-row justify-between items-center">
             <p>
               Matematik
@@ -186,14 +186,14 @@ const CoursesSection = () => {
 
           <div className="mt-4 flex flex-col gap-3">
             <div className="flex flex-row gap-4">
-              <p className="bg-white rounded-full w-20 text-center">Mantık</p>
-              <p className="bg-white rounded-full w-20 text-center">Geometri</p>
-              <p className="bg-white rounded-full w-20 text-center">
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Mantık</p>
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Geometri</p>
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">
                 Algoritma
               </p>
             </div>
             <div>
-              <p className="bg-white rounded-full w-20 text-center">Sayma</p>
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Sayma</p>
             </div>
           </div>
 
@@ -202,7 +202,7 @@ const CoursesSection = () => {
                 onClick={() => {
             navigate("/pricing");
           }}
-              className="rounded-xl bg-[#5988fe] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
+              className="rounded-xl bg-[#fb8500] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
            justify-center items-center px-2 py-2"
             >
               Daha fazla öğrenin
@@ -211,7 +211,7 @@ const CoursesSection = () => {
         </div>
 
         <div className="flex p-10 h-1/2 mt-4   rounded-2xl flex-col bg-orange-1">
-          <p className="text-[#5988fe]">YAŞ 7-8</p>
+          <p className="text-[#fff] bg-[#fb8500] w-fit p-3">YAŞ 7-8</p>
           <div className="flex flex-row justify-between items-center">
             <p>
               Roblox Oyun
@@ -235,14 +235,14 @@ const CoursesSection = () => {
 
           <div className="mt-4 flex flex-col gap-3">
             <div className="flex flex-row gap-4">
-              <p className="bg-white rounded-full w-20 text-center">Mantık</p>
-              <p className="bg-white rounded-full w-20 text-center">Geometri</p>
-              <p className="bg-white rounded-full w-20 text-center">
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Mantık</p>
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Geometri</p>
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">
                 Algoritma
               </p>
             </div>
             <div>
-              <p className="bg-white rounded-full w-20 text-center">Sayma</p>
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Sayma</p>
             </div>
           </div>
 
@@ -251,7 +251,7 @@ const CoursesSection = () => {
                 onClick={() => {
             navigate("/pricing");
           }}
-              className="rounded-xl bg-[#5988fe] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
+              className="rounded-xl bg-[#fb8500] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
            justify-center items-center px-2 py-2"
             >
               Daha fazla öğrenin
@@ -260,7 +260,7 @@ const CoursesSection = () => {
         </div>
 
         <div className="flex p-10 h-1/2 mt-4   rounded-2xl flex-col bg-orange-1">
-          <p className="text-[#5988fe]">YAŞ 8-11</p>
+          <p className="text-[#fff] bg-[#fb8500] w-fit p-3">YAŞ 8-11</p>
           <div className="flex flex-row justify-between items-center">
             <p>Python Start</p>
             <img src="/assets/python.png"></img>
@@ -281,14 +281,14 @@ const CoursesSection = () => {
 
           <div className="mt-4 flex flex-col gap-3">
             <div className="flex flex-row gap-4">
-              <p className="bg-white rounded-full w-20 text-center">Mantık</p>
-              <p className="bg-white rounded-full w-20 text-center">Geometri</p>
-              <p className="bg-white rounded-full w-20 text-center">
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Mantık</p>
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Geometri</p>
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">
                 Algoritma
               </p>
             </div>
             <div>
-              <p className="bg-white rounded-full w-20 text-center">Sayma</p>
+              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Sayma</p>
             </div>
           </div>
 
@@ -297,7 +297,7 @@ const CoursesSection = () => {
                 onClick={() => {
             navigate("/pricing");
           }}
-              className="rounded-xl bg-[#5988fe] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
+              className="rounded-xl bg-[#fb8500] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
            justify-center items-center px-2 py-2"
             >
               Daha fazla öğrenin

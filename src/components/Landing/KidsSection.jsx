@@ -7,7 +7,7 @@ const KidsSection = () => {
     <div className="bg-white  mt-14 flex flex-col gap-4 ">
       <div className=" flex justify-center items-center   bg-white rounded-lg mt-4  ">
         <p className="font-poppins text-[#2B2D42] font-semibold text-4xl text-center">
-          Kids' Coding Creations
+        Öğrencilerimizin kodlama çalışmaları
         </p>
       </div>
       <div className="flex kids  justify-center gap-6 mt-6 ">

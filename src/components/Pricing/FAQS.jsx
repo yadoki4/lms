@@ -11,7 +11,7 @@ const FAQS = () => {
     <div className="flex mt-32 flex-col gap-12 justify-center items-center">
       <div>
         <p className="font-poppins font-medium text-[#000000] text-3xl">
-          Frequently Asked Questions (FAQs)
+        Sıkça Sorulan Sorular (FAQs)
         </p>
       </div>
 

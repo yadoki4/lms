@@ -18,7 +18,7 @@ const RegestrationSection = () => {
       <div className=" flex flex-col  mx-24 px-6 py-6 forminner rounded-xl  bg-white">
         <div className="flex justify-between">
           <p className="font-poppins font-semibold text-[#000000] text-2xl">
-            Registration
+          Ücretsiz deneme dersine kaydolun
           </p>
           <a
             href="/"
@@ -29,13 +29,13 @@ const RegestrationSection = () => {
         </div>
         <div className="mt-2 flex flex-col gap-3">
           <div className="flex flex-col">
-            <label class="text-[#344054] font-medium font-poppins">Name*</label>
+            <label class="text-[#344054] font-medium font-poppins">İsim*</label>
             <input
               class="border focus:outline-none border-[#D0D5DD] rounded-lg px-2 py-2 bg-white"
               type="text"
               value={currentPassword}
               onChange={handleCurrentPassword}
-              placeholder="Enter your name"
+              placeholder="Isim adresinizi giriniz"
             />
           </div>
           <div className="flex flex-col">
@@ -52,40 +52,52 @@ const RegestrationSection = () => {
           </div>
           <div className="flex flex-col">
             <label class="text-[#344054] font-medium font-poppins">
-              Child's Name*
+            Çocuğunuzun İsmi*
             </label>
             <input
               class="border focus:outline-none border-[#D0D5DD] rounded-lg px-2 py-2 bg-white"
               type="text"
               value={currentPassword}
               onChange={handleCurrentPassword}
-              placeholder="Enter your Child's name"
+              placeholder="Çocuğunuzun ismini giriniz"
             />
           </div>
 
           <div className="flex flex-col">
             <label className="text-[#344054] font-medium font-poppins">
-              Child's Age*
+            Çocuğunuzun Yaşı*
             </label>
             <input
               class="border focus:outline-none border-[#D0D5DD] rounded-lg px-2 py-2 bg-white"
               type="text"
               value={newPassword}
               onChange={handleNewPassword}
-              placeholder="Enter your child's age"
+              placeholder="Çocuğunuzun Yaşı giriniz"
+            />
+          </div>
+          <div className="flex flex-col">
+            <label className="text-[#344054] font-medium font-poppins">
+            Telefon Numarası*
+            </label>
+            <input
+              class="border focus:outline-none border-[#D0D5DD] rounded-lg px-2 py-2 bg-white"
+              type="text"
+              value={newPassword}
+              onChange={handleNewPassword}
+              placeholder="Telefon numaranızı giriniz"
             />
           </div>
 
           <div className=" flex flex-col rounded-3xl bg-white">
             <div className="">
               <p className="text-[#344054] font-medium font-poppins">
-                Preferred Course
+              Tercih Edilen Kurs
               </p>
             </div>
             <div className="flex  w-full   rounded-lg h-16 bg-white  py-2">
               <div className=" flex items-center justify-between rounded-lg w-full border border-[#D0D5DD]">
                 <p className="ml-2 font-inter font-normal text-[#667085] text-base ">
-                  Select your preferred course
+                Tercih ettiğiniz kursu seçin
                 </p>
                 <div className="flex justify-end items-center">
                   <IoIosArrowDown
@@ -105,7 +117,8 @@ const RegestrationSection = () => {
           className="bg-orange-logo text-white font-poppins font-medium   rounded-xl w-60 h-11
            justify-center items-center px-2 py-2"
         >
-          Register Now
+          Şimdi kaydol
+
         </button>
       </div>
     </div>

@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Pricing.css";
 const Pricing = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="mt-8">
       <div className="flex justify-center items-center">
@@ -27,7 +30,7 @@ const Pricing = () => {
 
             <div className="flex flex-col justify-center items-center mt-8">
               <p className="font-poppins font-semibold text-4xl text-[#2B2D42]">
-                343 TL / Lesson
+                343 TL / Ders
               </p>
               <p className="font-poppins font-normal text-xl text-[#747474]">
                 Güçlü Başlangıç
@@ -47,11 +50,11 @@ const Pricing = () => {
             </div>
             <div className=" flex  rounded-lg mt-10 justify-center  items-center">
               <button
-                onClick={() => {}}
+                onClick={() => {navigate("/#registration");}}
                 className="bg-orange-logo text-white font-Sans font-medium   rounded-xl w-60 h-11
            justify-center items-center px-2 py-2"
               >
-                Get started Today
+                Şimdi Kaydolun
               </button>
             </div>
           </div>
@@ -67,7 +70,7 @@ const Pricing = () => {
 
             <div className="flex flex-col justify-center items-center mt-8">
               <p className="font-poppins font-semibold text-4xl text-white">
-                311 TL / Lesson
+                311 TL / Ders
               </p>
               <p className="font-poppins font-normal text-xl text-white">
                 Güçlü Başlangıç
@@ -88,11 +91,11 @@ const Pricing = () => {
             </div>
             <div className=" flex  rounded-lg mt-10 justify-center  items-center">
               <button
-                onClick={() => {}}
+                onClick={() => {navigate("/#registration");}}
                 className="bg-white text-[#2B2D42] font-Sans font-medium   rounded-xl w-60 h-11
            justify-center items-center px-2 py-2"
               >
-                Get started Today
+                Şimdi Kaydolun
               </button>
             </div>
           </div>
@@ -108,7 +111,7 @@ const Pricing = () => {
 
             <div className="flex flex-col justify-center items-center mt-8">
               <p className="font-poppins font-semibold text-4xl text-[#2B2D42]">
-                280 TL / Lesson
+                280 TL / Ders
               </p>
               <p className="font-poppins font-normal text-xl text-[#747474]">
                 Güçlü Başlangıç
@@ -129,11 +132,11 @@ const Pricing = () => {
             </div>
             <div className=" flex  rounded-lg mt-10 justify-center  items-center">
               <button
-                onClick={() => {}}
+                onClick={() => {navigate("/#registration");}}
                 className="bg-orange-logo text-white font-Sans font-medium   rounded-xl w-60 h-11
            justify-center items-center px-2 py-2"
               >
-                Get started Today
+                Şimdi Kaydolun
               </button>
             </div>
           </div>
@@ -150,7 +153,7 @@ const Pricing = () => {
 
           <div className="flex flex-col justify-center items-center mt-8">
             <p className="font-poppins font-semibold text-4xl text-[#2B2D42]">
-              280 TL / Lesson
+              280 TL / Ders
             </p>
             <p className="font-poppins font-normal text-xl text-[#747474]">
               Güçlü Başlangıç
@@ -172,11 +175,11 @@ const Pricing = () => {
           </div>
           <div className=" flex  rounded-lg mt-10 justify-center  items-center">
             <button
-              onClick={() => {}}
+              onClick={() => {navigate("/#registration");}}
               className="bg-orange-logo text-white font-Sans font-medium   rounded-xl w-60 h-11
            justify-center items-center px-2 py-2"
             >
-              Get started Today
+              Şimdi Kaydolun
             </button>
           </div>
         </div>
