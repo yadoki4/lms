@@ -3,8 +3,8 @@ import "./Modal.css";
 
 import { AiTwotoneFlag } from "react-icons/ai";
 import { RxCross2 } from "react-icons/rx";
-
-export default function Signup({ setOpenModal }) {
+import { Modal, Button, Group, rem } from "@mantine/core";
+export default function Signup({ isOpen, onClose }) {
   const [Email, setEmail] = useState();
   const [Password, setPassword] = useState();
   const [Name, setName] = useState();
@@ -18,16 +18,19 @@ export default function Signup({ setOpenModal }) {
     setName(event.target.value);
   };
   return (
-    <div className="modalBackground">
-    <div className="modalContainer">
+    <Modal
+      withinPortal
+      withOverlay
+      opened={isOpen}
+      size={"auto"}
+      className="modalContainer"
+      radius="xl"
+      centered
+      withCloseButton={false}
+    >
+      <div className="">
         <div class="flex justify-end">
-          <RxCross2
-            class="hover:cursor-pointer"
-            onClick={() => {
-              setOpenModal(false);
-            }}
-            size={30}
-          />
+          <RxCross2 class="hover:cursor-pointer" onClick={onClose} size={30} />
         </div>
         <div class="flex justify-start">
           <div class="w-10 h-10 bg-white shadow-sm flex justify-center items-center rounded-lg">
@@ -84,6 +87,6 @@ export default function Signup({ setOpenModal }) {
           </button>
         </div>
       </div>
-    </div>
+    </Modal>
   );
 }

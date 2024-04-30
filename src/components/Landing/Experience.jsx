@@ -12,7 +12,7 @@ const Experience = () => {
         </p>
       </div>
       <div className=" flex boxes3 gap-3 justify-center rounded-lg mt-14  ">
-        <div className="flex w-72 flex-1 flex-col gap-6 bg-orange-logo px-8 py-12 rounded-xl">
+        <div className="flex flex-1 flex-col gap-6 bg-orange-logo px-8 py-12 rounded-xl">
           <div className="flex justify-center items-center text-white self-center  text-5xl font-bold ">
             1
           </div>
@@ -29,21 +29,20 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="flex flex-1 flex-col  px-8 py-12 small  justify-center items-center">
-          <div className="bg-orange-logo flex flex-col gap-6 px-16 rounded-2xl py-8">
-          <div className="flex justify-center items-center text-white self-center  text-5xl font-bold ">
+        <div className="flex flex-1 flex-col gap-6 bg-orange-logo px-8  py-12 rounded-xl">
+        <div className="flex justify-center items-center text-white self-center  text-5xl font-bold ">
             2
           </div>
-            <div>
-              <p className="text-center font-poppins text-[#FFFFFF]   font-semibold text-lg">
-              Ders İçeriği
-              </p>
-            </div>
-            <div>
-              <p className="text-center font-poppins text-[#FFFFFF]   font-normal text-base">
-              1 saatlik ders süresinde,<br /> öğrencinin ilk haftanın etkinliklerini<br /> öğretmen eşliğinde tamamlaması amaçlanır ve<br /> öğrencinin seviyesi tespit<br /> edilir.
-              </p>
-            </div>
+          <div>
+            <p className="text-center font-poppins text-[#FFFFFF]   font-semibold text-lg">
+            Ders İçeriği                               
+            </p>
+          </div>
+          <div>
+            <p className="text-center font-poppins text-[#FFFFFF]   font-normal text-base">
+            1 saatlik ders süresinde, <br />  öğrencinin ilk haftanın<br /> etkinliklerini<br /> öğretmen eşliğinde<br /> tamamlaması amaçlanır ve<br /> öğrencinin seviyesi tespit<br /> edilir.
+
+            </p>
           </div>
         </div>
         <div className="flex flex-1 flex-col gap-6 bg-orange-logo px-8  py-12 rounded-xl">

@@ -1,307 +1,118 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React from 'react';
+import './CoursesSection.css'; 
+import Unity from "./courseimages/unity.png"
+import Roblox from "./courseimages/roblox.png"
+import Python from "./courseimages/p1.png"
+import Python2 from "./courseimages/p2.png"
 
 const CoursesSection = () => {
-  const navigate = useNavigate();
   return (
-    <div className="bg-[#f3f5fe] py-8  mt-16 flex flex-col">
-      <div className=" flex   justify-center rounded-lg mt-4  ">
-        <p className="font-poppins text-[#2B2D42] font-semibold text-4xl text-center">
+    <div className="bg-[#f3f5fe] py-8 mt-16 flex flex-col">
+      <div className=" flex justify-center rounded-lg mt-4">
+        <p className="font-poppins text-[#2B2D42] font-semibold text-4xl ">
           “Yeni nesil kurslarımızı  
           <span className="text-[#FB8500]"> Ücretsiz Deneme Dersi </span>ile keşfedin.”
         </p>
       </div>
-      <div className="flex flex-wrap justify-between w-11/12  mx-auto rounded-lg mt-10">
-        <div className="flex p-10 h-1/2 mt-4   rounded-2xl flex-col bg-orange-1">
-          <p className="text-[#fff] bg-[#fb8500] w-fit p-3">YAŞ 5-7</p>
-          <div className="flex flex-row justify-between items-center">
-            <p>
-              Matematik
-              <br /> Seviye 2
-            </p>
-            <img src="/assets/mob.png"></img>
-          </div>
-          <div className="mt-4">
-            <p className="font-poppins text-xs">
-              Çocuklar için Erken Matematik Maceralan,
-              <br />
-              matematik öğrenmeyi keyifli ve eğlenceli
-              <br />
-              bir deneyim haline getirmek için
-              <br />
-              tasarlanmış dinamik ve ilgi çekici 9 seviyeli
-              <br />
-              bir programdir
-            </p>
-          </div>
-
-          <div className="mt-4 flex flex-col gap-3">
-            <div className="flex flex-row gap-4">
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Mantık</p>
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Geometri</p>
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">
-                Algoritma
-              </p>
+      <div className="custom-slider">
+        <div className="slider-container">
+          <div className="slider">
+            {/* Course 1 */}
+            <div className="card-container">
+              <div className="card flex-col justify-center items-center">
+                <img className='mx-auto' src={Unity} alt="Unity" />
+                <h3 className='mx-auto text-white w-fit text-lg font-bold   mt-5'>YAŞ 7-8</h3>
+                <h3 className='mx-auto text-white w-fit font-semibold text-4xl mt-5'>Unity</h3>
+                <h3 className='text-white text-lg font-bold  text-center mt-5'>Küçük lokmalık derslerle (her 3 günde bir) kodlama temellerini öğrenin! Yoğun yazlar için mükemmel, eğlenceli 1,5 saatlik derslerle kodlamaya devam edin ve eğlenin!</h3>
+                <div className='w-full justify-center flex mt-5'>
+                <button className='text-[#fb8500] bg-white px-4 py-2 mt-16 '>Learn More</button>
+                </div>
+              </div>
+              <div className="card flex-col justify-center items-center hover-card">
+                <h3>Additional Content</h3>
+                <p>Additional Content Details</p>
+              </div>
             </div>
-            <div>
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Sayma</p>
+            {/* Course 2 */}
+            <div className="card-container">
+              <div className="card flex-col justify-center items-center">
+                <img className='mx-auto' src={Roblox} alt="Roblox" />
+                <h3 className='mx-auto text-white w-fit text-lg font-bold  mt-5 '>YAŞ 7-8</h3>
+                <h3 className='mx-auto text-white w-fit font-semibold text-4xl mt-5'>Roblox</h3>
+                <h3 className='text-white text-lg font-bold  text-center mt-5'>Küçük lokmalık derslerle (her 3 günde bir) kodlama temellerini öğrenin! Yoğun yazlar için mükemmel, eğlenceli 1,5 saatlik derslerle kodlamaya devam edin ve eğlenin!</h3>
+                <div className='w-full justify-center flex mt-5'>
+                <button className='text-[#fb8500] bg-white px-4 py-2 mt-12 '>Learn More</button>
+                </div>
+              </div>
+              <div className="card flex-col justify-center items-center hover-card">
+                <h3>Additional Content</h3>
+                <p>Additional Content Details</p>
+              </div>
             </div>
-          </div>
-
-          <div className="flex justify-center items-center mt-6">
-            <button
-                onClick={() => {
-            navigate("/pricing");
-          }}
-              className="rounded-xl bg-[#fb8500] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
-           justify-center items-center px-2 py-2"
-            >
-              Daha fazla öğrenin
-            </button>
-          </div>
-        </div>
-
-        <div className="flex p-10 h-1/2 mt-4   rounded-2xl flex-col bg-orange-1">
-          <p className="text-[#fff] bg-[#fb8500] w-fit p-3">YAŞ 7-8</p>
-          <div className="flex flex-row justify-between items-center">
-            <p>
-              Matematik
-              <br /> Seviye 3
-            </p>
-            <img src="/assets/mob3.png"></img>
-          </div>
-          <div className="mt-4">
-            <p className="font-poppins text-xs">
-              Çocuklar için Erken Matematik Maceralan,
-              <br />
-              matematik öğrenmeyi keyifli ve eğlenceli
-              <br />
-              bir deneyim haline getirmek için
-              <br />
-              tasarlanmış dinamik ve ilgi çekici 9 seviyeli
-              <br />
-              bir programdir
-            </p>
-          </div>
-
-          <div className="mt-4 flex flex-col gap-3">
-            <div className="flex flex-row gap-4">
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Mantık</p>
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Geometri</p>
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">
-                Algoritma
-              </p>
+            {/* Course 3 */}
+            <div className="card-container">
+              <div className="card flex-col justify-center items-center">
+                <img className='mx-auto' src={Python} alt="Python Temelli" />
+                <h3 className='mx-auto text-white w-fit text-lg font-bold mt-5'>YAŞ 7-8</h3>
+                <h3 className='mx-auto text-white w-fit font-semibold text-4xl mt-5'>Python Temelli</h3>
+                <h3 className='text-white text-lg font-bold  text-center mt-5'>32 haftalık Python Temelli kursumuzla kodlama temellerinde uzmanlaşın! Önemli veri yapıları, algoritmalar öğrenin ve kendi 2D oyunlarınızı geliştirin. İleri seviye Python ve Unity kurslarına hazırlık sağlar!</h3>
+                <div className='w-full justify-center flex mt-5'>
+                <button className='text-[#fb8500] bg-white px-4 py-2 mt-8 '>Learn More</button>
+                </div>
+              </div>
+              <div className="card flex-col justify-center items-center hover-card">
+                <h3>Additional Content</h3>
+                <p>Additional Content Details</p>
+              </div>
             </div>
-            <div>
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Sayma</p>
+            {/* Course 4 */}
+            <div className="card-container">
+              <div className="card flex-col justify-center items-center">
+                <img className='mx-auto' src={Python2} alt="Python Yaz Okulu" />
+                <h3 className='mx-auto text-white w-fit text-lg font-bold   mt-5'>YAŞ 7-8</h3>
+                <h3 className='mx-auto text-white w-fit font-semibold text-4xl mt-5'>Python Yaz Okulu</h3>
+                <h3 className='text-white text-lg font-bold  text-center mt-5'>Python Basic müfredatının tamamını sadece 1 yaz tatilinde öğrenin. Dersler 3 günde bir gerçekleşir. Yaz tatilini fırsata dönüştürmek isteyenler için mükemmeldir. 1.5 saatlik derslerle kodlamaya devam edin ve eğlenin.</h3>
+                <div className='w-full justify-center flex mt-5'>
+                <button className='text-[#fb8500] bg-white px-4 py-2 mt-6 '>Learn More</button>
+                </div>
+              </div>
+              <div className="card flex-col justify-center items-center hover-card">
+                <h3>Additional Content</h3>
+                <p>Additional Content Details</p>
+              </div>
             </div>
-          </div>
-
-          <div className="flex justify-center items-center mt-6">
-            <button
-                onClick={() => {
-            navigate("/pricing");
-          }}
-              className="rounded-xl bg-[#fb8500] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
-           justify-center items-center px-2 py-2"
-            >
-              Daha fazla öğrenin
-            </button>
-          </div>
-        </div>
-
-        <div className="flex p-10 h-1/2 mt-4   rounded-2xl flex-col bg-orange-1">
-          <p className="text-[#fff] bg-[#fb8500] w-fit p-3">YAŞ 8-11</p>
-          <div className="flex flex-row justify-between items-center">
-            <p>
-              Scratch ileÖğretmen Platformu
-              <br /> Kodlamanın
-              <br /> Büyüsü
-            </p>
-            <img src="/assets/S.png"></img>
-          </div>
-          <div className="mt-4">
-            <p className="font-poppins text-xs">
-              Çocuklar için Erken Matematik Maceralan,
-              <br />
-              matematik öğrenmeyi keyifli ve eğlenceli
-              <br />
-              bir deneyim haline getirmek için
-              <br />
-              tasarlanmış dinamik ve ilgi çekici 9 seviyeli
-              <br />
-              bir programdir
-            </p>
-          </div>
-
-          <div className="mt-4 flex flex-col gap-3">
-            <div className="flex flex-row gap-4">
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Mantık</p>
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Geometri</p>
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">
-                Algoritma
-              </p>
+            {/* Course 5 */}
+            <div className="card-container">
+              <div className="card flex-col justify-center items-center">
+                <img className='mx-auto' src={Python} alt="Python Profesyonel" />
+                <h3 className='mx-auto text-white w-fit text-lg font-bold   mt-5'>YAŞ 7-8</h3>
+                <h3 className='mx-auto text-white w-fit font-semibold text-4xl mt-5'>Python Profesyonel</h3>
+                <h3 className='text-white text-lg font-bold  text-center mt-5'>Python unuzu bir üst seviyeye taşıyın! OOP, NumPy & Pandas ile veri analizi, otomasyon gibi gelişmiş konseptlerde uzmanlaşın. Etkileyici projeler oluşturun ve kariyer fırsatlarını keşfedin. Deneyimli kodlayıcılar ve geleceğin geliştiricileri için idealdir.</h3>
+                <div className='w-full justify-center flex mt-5'>
+                <button className='text-[#fb8500] bg-white px-4 py-2  '>Learn More</button>
+                </div>
+              </div>
+              <div className="card flex-col justify-center items-center hover-card">
+                <h3>Additional Content</h3>
+                <p>Additional Content Details</p>
+              </div>
             </div>
-            <div>
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Sayma</p>
+            {/* Course 6 */}
+            <div className="card-container">
+              <div className="card flex-col justify-center items-center">
+                <img className='mx-auto' src={Python} alt="Python Basic" />
+                <h3 className='mx-auto text-white w-fit text-lg font-bold  mt-5'>YAŞ 7-8</h3>
+                <h3 className='mx-auto text-white w-fit font-semibold text-4xl mt-5'>Python Basic</h3>
+                <h3 className='text-white text-lg font-bold  text-center mt-5'>32 haftalık Python Temel kursumuzda kodlamanın temellerinde ustalaşın! Önemli veri yapılarını, algoritmaları öğrenin ve 2D oyunlar oluşturun. Sizi ileri düzey Python ve Unity ye hazırlar!</h3>
+                <div className='w-full justify-center flex mt-5'>
+                <button className='text-[#fb8500] bg-white px-4 py-2 mt-14 '>Learn More</button>
+                </div>
+              </div>
+              <div className="card flex-col justify-center items-center hover-card">
+                <h3>Additional Content</h3>
+                <p>Additional Content Details</p>
+              </div>
             </div>
-          </div>
-
-          <div className="flex justify-center items-center mt-6">
-            <button
-                onClick={() => {
-            navigate("/pricing");
-          }}
-              className="rounded-xl bg-[#fb8500] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
-           justify-center items-center px-2 py-2"
-            >
-              Daha fazla öğrenin
-            </button>
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-wrap justify-between  w-11/12 mx-auto   rounded-lg ">
-        <div className="flex p-10 h-1/2 mt-4   rounded-2xl flex-col bg-orange-1">
-          <p className="text-[#fff] bg-[#fb8500] w-fit p-3">YAŞ 5-7</p>
-          <div className="flex flex-row justify-between items-center">
-            <p>
-              Matematik
-              <br /> Seviye 2
-            </p>
-            <img src="/assets/board.png"></img>
-          </div>
-          <div className="mt-4">
-            <p className="font-poppins text-xs">
-              Çocuklar için Erken Matematik Maceralan,
-              <br />
-              matematik öğrenmeyi keyifli ve eğlenceli
-              <br />
-              bir deneyim haline getirmek için
-              <br />
-              tasarlanmış dinamik ve ilgi çekici 9 seviyeli
-              <br />
-              bir programdir
-            </p>
-          </div>
-
-          <div className="mt-4 flex flex-col gap-3">
-            <div className="flex flex-row gap-4">
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Mantık</p>
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Geometri</p>
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">
-                Algoritma
-              </p>
-            </div>
-            <div>
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Sayma</p>
-            </div>
-          </div>
-
-          <div className="flex justify-center items-center mt-6">
-            <button
-                onClick={() => {
-            navigate("/pricing");
-          }}
-              className="rounded-xl bg-[#fb8500] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
-           justify-center items-center px-2 py-2"
-            >
-              Daha fazla öğrenin
-            </button>
-          </div>
-        </div>
-
-        <div className="flex p-10 h-1/2 mt-4   rounded-2xl flex-col bg-orange-1">
-          <p className="text-[#fff] bg-[#fb8500] w-fit p-3">YAŞ 7-8</p>
-          <div className="flex flex-row justify-between items-center">
-            <p>
-              Roblox Oyun
-              <br /> Tasarımı
-            </p>
-            <img src="/assets/R.png"></img>
-          </div>
-          <div className="mt-4">
-            <p className="font-poppins text-xs">
-              Çocuklar için Erken Matematik Maceralan,
-              <br />
-              matematik öğrenmeyi keyifli ve eğlenceli
-              <br />
-              bir deneyim haline getirmek için
-              <br />
-              tasarlanmış dinamik ve ilgi çekici 9 seviyeli
-              <br />
-              bir programdir
-            </p>
-          </div>
-
-          <div className="mt-4 flex flex-col gap-3">
-            <div className="flex flex-row gap-4">
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Mantık</p>
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Geometri</p>
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">
-                Algoritma
-              </p>
-            </div>
-            <div>
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Sayma</p>
-            </div>
-          </div>
-
-          <div className="flex justify-center items-center mt-6">
-            <button
-                onClick={() => {
-            navigate("/pricing");
-          }}
-              className="rounded-xl bg-[#fb8500] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
-           justify-center items-center px-2 py-2"
-            >
-              Daha fazla öğrenin
-            </button>
-          </div>
-        </div>
-
-        <div className="flex p-10 h-1/2 mt-4   rounded-2xl flex-col bg-orange-1">
-          <p className="text-[#fff] bg-[#fb8500] w-fit p-3">YAŞ 8-11</p>
-          <div className="flex flex-row justify-between items-center">
-            <p>Python Start</p>
-            <img src="/assets/python.png"></img>
-          </div>
-          <div className="mt-4">
-            <p className="font-poppins text-xs">
-              Çocuklar için Erken Matematik Maceralan,
-              <br />
-              matematik öğrenmeyi keyifli ve eğlenceli
-              <br />
-              bir deneyim haline getirmek için
-              <br />
-              tasarlanmış dinamik ve ilgi çekici 9 seviyeli
-              <br />
-              bir programdir
-            </p>
-          </div>
-
-          <div className="mt-4 flex flex-col gap-3">
-            <div className="flex flex-row gap-4">
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Mantık</p>
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Geometri</p>
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">
-                Algoritma
-              </p>
-            </div>
-            <div>
-              <p className="text-[#fff] bg-[#fb8500] rounded-full w-20 text-center">Sayma</p>
-            </div>
-          </div>
-
-          <div className="flex justify-center items-center mt-6">
-            <button
-                onClick={() => {
-            navigate("/pricing");
-          }}
-              className="rounded-xl bg-[#fb8500] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
-           justify-center items-center px-2 py-2"
-            >
-              Daha fazla öğrenin
-            </button>
           </div>
         </div>
       </div>

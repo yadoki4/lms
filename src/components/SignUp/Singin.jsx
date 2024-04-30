@@ -3,14 +3,19 @@ import "./Modal.css";
 import { IoMdLogIn } from "react-icons/io";
 import { AiTwotoneFlag } from "react-icons/ai";
 import { RxCross2 } from "react-icons/rx";
-//sign in modal is ma check box ka tick ka color change krna
-function SignIn({ setOpenModal }) {
-  const [Email, setEmail] = useState();
-  const [Password, setPassword] = useState();
+import { IoClose } from "react-icons/io5";
+import { Shared } from "../../shared";
+import { Modal, Button, Group, rem } from "@mantine/core";
+
+function SignIn({ isOpen, onClose }) {
+  const [Email, setEmail] = useState("");
+  const [Password, setPassword] = useState("");
   const [isChecked, setIsChecked] = useState(false);
+
   const handleEmail = (event) => {
     setEmail(event.target.value);
   };
+
   const handlePassword = (event) => {
     setPassword(event.target.value);
   };
@@ -19,15 +24,41 @@ function SignIn({ setOpenModal }) {
     setIsChecked(!isChecked);
   };
 
+  async function login(email, password) {
+    try {
+      const response = await fetch(Shared.apiurl + "/api/auth/login", {
+        email: email,
+        password: password,
+      });
+      console.log("Login successful");
+      console.log("Response:", response.data.user.role);
+      return response.data; // Return response data if needed
+    } catch (error) {
+      console.error(
+        "Login failed:",
+        error.response ? error.response.data : error.message
+      );
+      throw error;
+      // Re-throw error to handle it at a higher level if needed
+    }
+  }
+
   return (
-    <div className="modalBackground">
-      <div className="modalContainer">
+    <Modal
+      withinPortal
+      withOverlay
+      opened={isOpen}
+      size={"auto"}
+      className="modalContainer"
+      radius="xl"
+      centered
+      withCloseButton={false}
+    >
+      <div className="px-4 pb-4">
         <div className="flex justify-end mt-4">
           <RxCross2
             className="hover:cursor-pointer"
-            onClick={() => {
-              setOpenModal(false);
-            }}
+            onClick={onClose}
             size={30}
           />
         </div>
@@ -61,7 +92,7 @@ function SignIn({ setOpenModal }) {
           </label>
           <input
             className="border focus:outline-none rounded-lg px-2 py-2 bg-white border-[#D0D5DD]"
-            type="text"
+            type="password"
             value={Password}
             onChange={handlePassword}
             placeholder="Şifrenizi girin"
@@ -77,9 +108,9 @@ function SignIn({ setOpenModal }) {
               name="checkbox1"
               value="value1"
             ></input>
-            <lable className="ml-1 text-[#2B2D42]  font-semibold font-poppins">
+            <label className="ml-1 text-[#2B2D42]  font-semibold font-poppins">
               Beni hatırla
-            </lable>
+            </label>
           </div>
           <div>
             <button className="bg-white text-[#FB8500]  font-bold font-poppins ">
@@ -94,14 +125,18 @@ function SignIn({ setOpenModal }) {
           >
             Giriş Yap
           </a>
-          <button className="bg-white h-10 rounded-lg  border border-[#D0D5DD] font-semibold font-poppins ">
+          <button
+            onClick={() => {
+              login(Email, Password);
+            }}
+            className="bg-white h-10 rounded-lg  border border-[#D0D5DD] font-semibold font-poppins "
+          >
             İptal
           </button>
         </div>
       </div>
-    </div>
+    </Modal>
   );
 }
-//create account modal is m modal ko width and apdding deni
 
 export default SignIn;

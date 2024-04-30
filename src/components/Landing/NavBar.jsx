@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import LoginModal from "../SignUp/Singin";
-import SignupModal from "../SignUp/Signup";
+import SignIn from "../SignUp/Singin";
+import Signup from "../SignUp/Signup";
+import { Portal } from "@mantine/core";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const navigate = useNavigate();
@@ -10,85 +11,78 @@ const Navbar = () => {
     setShowMenu(!showMenu);
   };
   const [showLoginModal, setShowLoginModal] = useState(false);
-  const [showSignupModal, setShowSignupModal] = useState(false);
+  const [isSignupModalOpened, setIsSignupModalOpened] = useState(false);
 
-  const toggleLoginModal = () => {
-    setShowLoginModal(!showLoginModal);
+  const closeSignupModal = () => {
+    setShowLoginModal(false);
+  };
+  const closeSignInModal = () => {
+    setIsSignupModalOpened(false);
   };
 
-  const toggleSignupModal = () => {
-    setShowSignupModal(!showSignupModal);
-  };
   return (
     <nav className="bg-gray-50 max-w-full md:max-w-screen-xl mx-auto px-6 md:px-1 lg:px-20 py-4 md:py-6">
       <div className="flex justify-between md:justify-evenly items-center">
         <div className="flex gap-8">
           {/* Primary Navbar items */}
           <div className="hidden md:flex gap-8">
-            
-          <div className="flex items-center w-20 h-8 gap-1">
-          {/* Website Logo */}
-          <button  onClick={() => {
-            navigate("/");
-          }}
-            className="text-orange-logo text-2xl font-bold font-poppins"
-          >
-            LOGO
-          </button>
-        </div>
-            <a
-              href=""
-              className="text-gray-600 m-1 font-normal font-poppins"
-            >
-              Kurslar
+            <div className="flex items-center w-20 h-8 gap-1">
+              {/* Website Logo */}
+              <button
+                onClick={() => {
+                  navigate("/");
+                }}
+                className="text-orange-logo text-2xl font-bold font-poppins"
+              >
+                LOGO
+              </button>
+            </div>
+            <a href="" className="text-gray-600 m-1 font-normal font-poppins">
+            Kurslar
             </a>
-            <a
-              href=""
-              className="text-gray-600 mt-1 font-normal font-poppins "
-            >
-              Hakkımızda
+            <a href="" className="text-gray-600 mt-1 font-normal font-poppins ">
+            Hakkımızda
             </a>
           </div>
         </div>
-        
+
         {/* Secondary Navbar items */}
         <div className="hidden md:flex items-center gap-8">
-          
-          <a
-            href=""
-            className="text-gray-600 font-normal font-poppins"
-          >
-            İletişim
+          <a href="" className="text-gray-600 font-normal font-poppins">
+          İletişim
           </a>
           <button
-            onClick={toggleLoginModal}
+            onClick={() => {
+              setIsSignupModalOpened(true);
+            }}
             className="text-gray-600 font-normal font-poppins"
           >
             Giriş Yap
           </button>
 
           <button
-            onClick={toggleSignupModal}
+            onClick={() => {
+              setShowLoginModal(true);
+            }}
             className="text-gray-600 font-normal font-poppins"
           >
             Kaydol
-
           </button>
           <button
-                onClick={() => {
-            navigate("/pricing");
-          }}
-              className="rounded-xl bg-[#5988fe] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
+            onClick={() => {
+              navigate("/pricing");
+            }}
+            className="rounded-xl bg-[#fb8500] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
            justify-center items-center px-2 py-2"
-            >
-              Planlarımızı keşfedin
-            </button>
+          >
+            Planlarımızı keşfedin
+          </button>
         </div>
         <div className="hidden md:flex items-center gap-8">
           <div className="relative">
             <input
               className="bg-gray-50 text-sm font-normal font-['Poppins] italic ml-1 py-1 pr-8 pl-3 rounded-full border border-gray-4 focus:outline-none focus:border-blue-500"
-              placeholder="Şunu arıyorum..."
+              placeholder="I'm looking for..."
             />
             <img
               src="/assets/search.svg"
@@ -99,16 +93,17 @@ const Navbar = () => {
         </div>
         {/* Mobile menu button */}
         <div className="md:hidden flex w-full justify-between items-center">
-        <div className=" w-20 h-8 gap-1">
-          {/* Website Logo */}
-          <button  onClick={() => {
-            navigate("/");
-          }}
-            className="text-orange-logo text-2xl font-bold font-poppins"
-          >
-            LOGO
-          </button>
-        </div>
+          <div className=" w-20 h-8 gap-1">
+            {/* Website Logo */}
+            <button
+              onClick={() => {
+                navigate("/");
+              }}
+              className="text-orange-logo text-2xl font-bold font-poppins"
+            >
+              LOGO
+            </button>
+          </div>
           <button
             className="outline-none mobile-menu-button"
             onClick={toggleMenu}
@@ -132,9 +127,7 @@ const Navbar = () => {
       {showMenu && (
         <div className="md:hidden bg-white">
           <ul className="">
-            <li className="active">
-             
-            </li>
+            <li className="active"></li>
             <li>
               <a
                 href="#services"
@@ -153,28 +146,34 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#İletişim"
+                href="#contact"
                 className="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300"
               >
-                İletişim
+                Contact
               </a>
               <button
                 onClick={() => {
-            navigate("/pricing");
-          }}
-              className="rounded-xl bg-[#5988fe] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
+                  navigate("/pricing");
+                }}
+                className="rounded-xl bg-[#5988fe] text-[#FFFFFF] font-poppins font-semibold text-base w-52  h-12
            justify-center items-center px-2 py-2"
-            >
-              Planlarımızı keşfedin
-            </button>
+              >
+                Find Your Plan
+              </button>
             </li>
           </ul>
         </div>
       )}
-       {showLoginModal && <LoginModal setOpenModal={setShowLoginModal} />}
-
-{showSignupModal && <SignupModal setOpenModal={setShowSignupModal} />}
-
+      {isSignupModalOpened && (
+        <Portal>
+          <SignIn isOpen={isSignupModalOpened} onClose={closeSignInModal} />
+        </Portal>
+      )}
+      {showLoginModal && (
+        <Portal>
+          <Signup isOpen={showLoginModal} onClose={closeSignupModal} />
+        </Portal>
+      )}
     </nav>
   );
 };
