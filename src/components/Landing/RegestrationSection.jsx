@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import Controller from "../Landing/courseimages/Controller.png"
 const RegestrationSection = () => {
   const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
@@ -111,6 +112,7 @@ const RegestrationSection = () => {
           </div>
         </div>
       </div>
+      <img className="absolute right-0 mt-40" src={Controller} alt="" />
       <div className=" flex  rounded-lg mt-10 justify-center  items-center">
         <button
           onClick={() => {}}

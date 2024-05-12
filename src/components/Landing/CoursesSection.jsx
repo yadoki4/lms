@@ -17,102 +17,141 @@ const CoursesSection = () => {
       <div className="custom-slider">
         <div className="slider-container">
           <div className="slider">
-            {/* Course 1 */}
             <div className="card-container">
               <div className="card flex-col justify-center items-center">
                 <img className='mx-auto' src={Unity} alt="Unity" />
                 <h3 className='mx-auto text-white w-fit text-lg font-bold   mt-5'>YAŞ 7-8</h3>
                 <h3 className='mx-auto text-white w-fit font-semibold text-4xl mt-5'>Unity</h3>
-                <h3 className='text-white text-lg font-bold  text-center mt-5'>Küçük lokmalık derslerle (her 3 günde bir) kodlama temellerini öğrenin! Yoğun yazlar için mükemmel, eğlenceli 1,5 saatlik derslerle kodlamaya devam edin ve eğlenin!</h3>
+                <h3 className='text-white text-lg font-bold  text-center mt-5'>Yaratıcılığınızı ve hayal gücünüzü kullanarak benzersiz oyunlar oluşturun. C# programlama dilini öğrenin."</h3>
                 <div className='w-full justify-center flex mt-5'>
                 <button className='text-[#fb8500] bg-white px-4 py-2 mt-16 '>Learn More</button>
                 </div>
               </div>
               <div className="card flex-col justify-center items-center hover-card">
-                <h3>Additional Content</h3>
-                <p>Additional Content Details</p>
+                <h2 className='text-[#fb8500] font-semibold text-4xl my-3'>Unity</h2>
+                <h2 className='font-bold text-2xl  my-5'>Kurs süresi:  32 Hafta</h2>
+                <p className='font-normal text-lg  my-5'><span className='font-bold text-2xl'>Müfredat:</span>  C# yazılım diline giriş, 2D ve <br /> 3D oyun tasarımları, temel seviye <br /> modelleme</p>
+                <p className='font-normal text-lg  my-5'><span className='font-bold text-2xl'>Seviye: </span> Başlangıç</p>
+                <div className='flex justify-between  my-5 flex-wrap'>
+                  <button className='bg-white p-3 rounded-2xl '>C#</button>
+                  <button className='bg-white p-3 rounded-2xl '>Oyun Geliştirme</button>
+                  <button className='bg-white p-3 rounded-2xl '>2D Oyun</button>
+                  <button className='bg-white p-3 rounded-2xl '>3D</button>
+                </div>
+<div className='flex justify-center items-center'>
+<button className='bg-[#fb8500] py-4 px-7 text-white rounded-2xl mt-9'>Planlarımızı Keşfedin</button>
+
+</div>
               </div>
             </div>
-            {/* Course 2 */}
             <div className="card-container">
               <div className="card flex-col justify-center items-center">
                 <img className='mx-auto' src={Roblox} alt="Roblox" />
                 <h3 className='mx-auto text-white w-fit text-lg font-bold  mt-5 '>YAŞ 7-8</h3>
                 <h3 className='mx-auto text-white w-fit font-semibold text-4xl mt-5'>Roblox</h3>
-                <h3 className='text-white text-lg font-bold  text-center mt-5'>Küçük lokmalık derslerle (her 3 günde bir) kodlama temellerini öğrenin! Yoğun yazlar için mükemmel, eğlenceli 1,5 saatlik derslerle kodlamaya devam edin ve eğlenin!</h3>
+                <h3 className='text-white text-lg font-bold  text-center mt-5'>Roblox'un heyecan verici evreninin bir parçası olun! Oyunlar, haritalar ve oyun içi ögeler tasarlayın ve sınırsız hayal gücüyle yaratın. En sevdiğiniz oyunu nasıl paraya dönüştüreceğinizi öğrenin."</h3>
                 <div className='w-full justify-center flex mt-5'>
                 <button className='text-[#fb8500] bg-white px-4 py-2 mt-12 '>Learn More</button>
                 </div>
               </div>
               <div className="card flex-col justify-center items-center hover-card">
-                <h3>Additional Content</h3>
-                <p>Additional Content Details</p>
+              <h2 className='text-[#fb8500] font-semibold text-4xl my-3'>Roblox</h2>
+                <h2 className='font-bold text-2xl  my-5'>Kurs süresi:  32 Hafta</h2>
+                <p className='font-normal text-lg  my-5'><span className='font-bold text-2xl'>Müfredat:</span>  Roblox Studio ile oyunlar ve <br /> oyun içi 3D öğelerin tasarımlarını<br /> oluşturma</p>
+                <p className='font-normal text-lg  my-5'><span className='font-bold text-2xl'>Seviye: </span> Başlangıç</p>
+                <div className='flex justify-between  my-5 '>
+                  <button className='bg-white p-3 rounded-2xl ml-2 '>Hayal Gücü</button>
+                  <button className='bg-white p-3 rounded-2xl ml-2 '>Oyun Tasarımı</button>
+                  <button className='bg-white p-3 rounded-2xl ml-2'>3D Modelleme</button>
+                </div>
+<div className='flex justify-center items-center'>
+<button className='bg-[#fb8500] py-4 px-7 text-white rounded-2xl mt-9'>Planlarımızı Keşfedin</button>
+
+</div>
               </div>
             </div>
-            {/* Course 3 */}
             <div className="card-container">
               <div className="card flex-col justify-center items-center">
                 <img className='mx-auto' src={Python} alt="Python Temelli" />
                 <h3 className='mx-auto text-white w-fit text-lg font-bold mt-5'>YAŞ 7-8</h3>
-                <h3 className='mx-auto text-white w-fit font-semibold text-4xl mt-5'>Python Temelli</h3>
-                <h3 className='text-white text-lg font-bold  text-center mt-5'>32 haftalık Python Temelli kursumuzla kodlama temellerinde uzmanlaşın! Önemli veri yapıları, algoritmalar öğrenin ve kendi 2D oyunlarınızı geliştirin. İleri seviye Python ve Unity kurslarına hazırlık sağlar!</h3>
+                <h3 className='mx-auto text-white w-fit font-semibold text-4xl mt-5'>Python Start</h3>
+                <h3 className='text-white text-lg font-bold  text-center mt-5'>3Python'ın gücüyle tanışın, temellerini öğrenin. Uzman öğretmenler eşliğinde çizimler ve 2D oyunlar ile kodlama sanatını keşfedin! </h3>
                 <div className='w-full justify-center flex mt-5'>
                 <button className='text-[#fb8500] bg-white px-4 py-2 mt-8 '>Learn More</button>
                 </div>
               </div>
               <div className="card flex-col justify-center items-center hover-card">
-                <h3>Additional Content</h3>
-                <p>Additional Content Details</p>
+              <h2 className='text-[#fb8500] font-semibold text-4xl my-3'>Python Start</h2>
+                <h2 className='font-bold text-2xl  my-5'>Kurs süresi:  32 Hafta</h2>
+                <p className='font-normal text-lg  my-5'><span className='font-bold text-2xl'>Müfredat:</span>  Python temellerine giriş, temel syntax, kodlama yardımıya çizimler, 2D oyun geliştirme</p>
+                <p className='font-normal text-lg  my-5'><span className='font-bold text-2xl'>Seviye: </span> Başlangıç</p>
+                <div className='flex justify-between  my-5 flex-wrap'>
+                  <button className='bg-white p-3 rounded-2xl '>Algoritma</button>
+                  <button className='bg-white p-3 rounded-2xl '>Kodlama</button>
+                  <button className='bg-white p-3 rounded-2xl '>2D Oyunlar</button>
+                  <button className='bg-white p-3 rounded-2xl mt-3 '>Çizimler</button>
+                </div>
+<div className='flex justify-center items-center'>
+<button className='bg-[#fb8500] py-4 px-7 text-white rounded-2xl mt-9'>Planlarımızı Keşfedin</button>
+
+</div>
               </div>
             </div>
-            {/* Course 4 */}
             <div className="card-container">
               <div className="card flex-col justify-center items-center">
                 <img className='mx-auto' src={Python2} alt="Python Yaz Okulu" />
                 <h3 className='mx-auto text-white w-fit text-lg font-bold   mt-5'>YAŞ 7-8</h3>
                 <h3 className='mx-auto text-white w-fit font-semibold text-4xl mt-5'>Python Yaz Okulu</h3>
-                <h3 className='text-white text-lg font-bold  text-center mt-5'>Python Basic müfredatının tamamını sadece 1 yaz tatilinde öğrenin. Dersler 3 günde bir gerçekleşir. Yaz tatilini fırsata dönüştürmek isteyenler için mükemmeldir. 1.5 saatlik derslerle kodlamaya devam edin ve eğlenin.</h3>
+                <h3 className='text-white text-lg font-bold  text-center mt-5'>Python temellerine giriş, temel syntax, kodlama yardımıya çizimler, 2D oyun geliştirme.</h3>
                 <div className='w-full justify-center flex mt-5'>
                 <button className='text-[#fb8500] bg-white px-4 py-2 mt-6 '>Learn More</button>
                 </div>
               </div>
               <div className="card flex-col justify-center items-center hover-card">
-                <h3>Additional Content</h3>
-                <p>Additional Content Details</p>
+              <h2 className='text-[#fb8500] font-semibold text-4xl my-3'>Python Yaz Okulu</h2>
+                <h2 className='font-bold text-2xl  my-5'>Kurs süresi:  32 Ders 3 Ay</h2>
+                <p className='font-normal text-lg  my-5'><span className='font-bold text-2xl'>Müfredat:</span>  C# yazılım diline giriş, 2D ve <br /> 3D oyun tasarımları, temel seviye <br /> modelleme</p>
+                <p className='font-normal text-lg  my-5'><span className='font-bold text-2xl'>Seviye: </span> Başlangıç</p>
+                <div className='flex justify-between  my-5 flex-wrap'>
+                <button className='bg-white p-3 rounded-2xl '>Algoritma</button>
+                  <button className='bg-white p-3 rounded-2xl '>Kodlama</button>
+                  <button className='bg-white p-3 rounded-2xl '>2D Oyunlar</button>
+                  <button className='bg-white p-3 rounded-2xl mt-3 '>Çizimler</button> 
+                </div>
+<div className='flex justify-center items-center'>
+<button className='bg-[#fb8500] py-4 px-7 text-white rounded-2xl mt-9'>Planlarımızı Keşfedin</button>
+
+</div>
               </div>
             </div>
-            {/* Course 5 */}
             <div className="card-container">
               <div className="card flex-col justify-center items-center">
                 <img className='mx-auto' src={Python} alt="Python Profesyonel" />
                 <h3 className='mx-auto text-white w-fit text-lg font-bold   mt-5'>YAŞ 7-8</h3>
-                <h3 className='mx-auto text-white w-fit font-semibold text-4xl mt-5'>Python Profesyonel</h3>
-                <h3 className='text-white text-lg font-bold  text-center mt-5'>Python unuzu bir üst seviyeye taşıyın! OOP, NumPy & Pandas ile veri analizi, otomasyon gibi gelişmiş konseptlerde uzmanlaşın. Etkileyici projeler oluşturun ve kariyer fırsatlarını keşfedin. Deneyimli kodlayıcılar ve geleceğin geliştiricileri için idealdir.</h3>
+                <h3 className='mx-auto text-white w-fit font-semibold text-4xl mt-5'>Python PRO</h3>
+                <h3 className='text-white text-lg font-bold  text-center mt-5'>Python deneyiminizi bir üst seviyeye taşıyın.  Etkileyici projeler oluşturun ve bunları CV'nize ekleyerek erkenden kariyer fırsatlarını keşfedin. Geleceğin yıldızları için idealdir.</h3>
                 <div className='w-full justify-center flex mt-5'>
                 <button className='text-[#fb8500] bg-white px-4 py-2  '>Learn More</button>
                 </div>
               </div>
               <div className="card flex-col justify-center items-center hover-card">
-                <h3>Additional Content</h3>
-                <p>Additional Content Details</p>
-              </div>
-            </div>
-            {/* Course 6 */}
-            <div className="card-container">
-              <div className="card flex-col justify-center items-center">
-                <img className='mx-auto' src={Python} alt="Python Basic" />
-                <h3 className='mx-auto text-white w-fit text-lg font-bold  mt-5'>YAŞ 7-8</h3>
-                <h3 className='mx-auto text-white w-fit font-semibold text-4xl mt-5'>Python Basic</h3>
-                <h3 className='text-white text-lg font-bold  text-center mt-5'>32 haftalık Python Temel kursumuzda kodlamanın temellerinde ustalaşın! Önemli veri yapılarını, algoritmaları öğrenin ve 2D oyunlar oluşturun. Sizi ileri düzey Python ve Unity ye hazırlar!</h3>
-                <div className='w-full justify-center flex mt-5'>
-                <button className='text-[#fb8500] bg-white px-4 py-2 mt-14 '>Learn More</button>
+              <h2 className='text-[#fb8500] font-semibold text-4xl my-3'>Python Pro</h2>
+                <h2 className='font-bold text-2xl  my-5'>Kurs süresi:  32 Ders</h2>
+                <p className='font-normal text-lg  my-5'><span className='font-bold text-2xl'>Müfredat:</span> Python ile yapay zeka uygulamaları, discord botları,  web geliştirme, ileri düzey programlama</p>
+                <p className='font-normal text-lg  my-5'><span className='font-bold text-2xl'>Seviye: </span>  İleri düzey</p>
+                <div className='flex justify-between  my-5 flex-wrap'>
+                  <button className='bg-white p-3 rounded-2xl '>Yapay Zeka</button>
+                  <button className='bg-white p-3 rounded-2xl '>Web Sitesi </button>
+                  <button className='bg-white p-3 rounded-2xl '>Botlar</button>
+                  <button className='bg-white p-3 rounded-2xl mt-3 '>İleri Düzey</button>
                 </div>
-              </div>
-              <div className="card flex-col justify-center items-center hover-card">
-                <h3>Additional Content</h3>
-                <p>Additional Content Details</p>
+<div className='flex justify-center items-center'>
+<button className='bg-[#fb8500] py-4 px-7 text-white rounded-2xl mt-9'>Planlarımızı Keşfedin</button>
+
+</div>
               </div>
             </div>
+          
           </div>
         </div>
       </div>

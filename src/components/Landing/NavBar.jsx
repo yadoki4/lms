@@ -82,7 +82,7 @@ const Navbar = () => {
           <div className="relative">
             <input
               className="bg-gray-50 text-sm font-normal font-['Poppins] italic ml-1 py-1 pr-8 pl-3 rounded-full border border-gray-4 focus:outline-none focus:border-blue-500"
-              placeholder="I'm looking for..."
+              placeholder="Şunu Arıyorum..."
             />
             <img
               src="/assets/search.svg"

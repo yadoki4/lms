@@ -12,42 +12,42 @@ const KidsSection = () => {
       </div>
       <div className="flex kids  justify-center gap-6 mt-6 ">
         <KidsImage
-          heading1="Sarah-10 years old"
-          img="/assets/kidsimg1.svg"
-          heading2="Sarah, age 10, crafts a maze-rescue game."
-          heading3="Her coding brilliance shines"
+          heading1="Akif - 10 Yaş"
+          img="/assets/card1.png"
+          heading2="Kursun  17. haftasında bir platform oyunu"
+          heading3=" tasarladı."
         />
         <KidsImage
-          heading1="Sarah-10 years old"
-          img="/assets/kidsimg2.svg"
-          heading2="Sarah, age 10, crafts a maze-rescue game."
-          heading3="Her coding brilliance shines"
+          heading1="Ali Berk - 12 Yaş"
+          img="/assets/card2.png"
+          heading2="Kursun 22. Haftasında tasarladığı “Space "
+          heading3="Inviders” oyunu"
         />
         <KidsImage
-          heading1="Sarah-10 years old"
-          img="/assets/kidsimg1.svg"
-          heading2="Sarah, age 10, crafts a maze-rescue game."
-          heading3="Her coding brilliance shines"
+          heading1="Betül - 11 Yaş"
+          img="/assets/card3.png"
+          heading2="Mezuniyet projesi için Flappy Bird "
+          heading3="oyunundan esinlendi"
         />
       </div>
       <div className="flex kids justify-center  mt-8 gap-6">
         <KidsImage
-          heading1="Sarah-10 years old"
-          img="/assets/kidsimg1.svg"
-          heading2="Sarah, age 10, crafts a maze-rescue game."
-          heading3="Her coding brilliance shines"
+          heading1="Alp Erdem - 16 Yaş"
+          img="/assets/card4.png"
+          heading2="Mezuniyet projesi için Unity kullanarak "
+          heading3="3D bir oyun geliştirdi"
         />
         <KidsImage
-          heading1="Sarah-10 years old"
-          img="/assets/kidsimg2.svg"
-          heading2="Sarah, age 10, crafts a maze-rescue game."
-          heading3="Her coding brilliance shines"
+          heading1="İnci - 14 Yaş"
+          img="/assets/card5.png"
+          heading2="Klasik Super Mario oyunundan esinlenerek "
+          heading3="oluşturulan bir platform oyunu"
         />
         <KidsImage
-          heading1="Sarah-10 years old"
-          img="/assets/kidsimg1.svg"
-          heading2="Sarah, age 10, crafts a maze-rescue game."
-          heading3="Her coding brilliance shines"
+          heading1="İlker - 13 Yaş"
+          img="/assets/card6.png"
+          heading2="Mezuniyet projesi için bir korku oyunu"
+          heading3=" geliştirdi"
         />
       </div>
     </div>

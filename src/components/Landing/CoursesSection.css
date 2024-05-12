@@ -34,6 +34,7 @@
 
 .card:hover {
   transform: translateX(-10px);
+  background-color: #fce0a2;
 }
 
 .card:not(:first-child) {
