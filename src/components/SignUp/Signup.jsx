@@ -1,13 +1,18 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 import "./Modal.css";
-
 import { AiTwotoneFlag } from "react-icons/ai";
+import { Shared } from "../../shared";
+
 import { RxCross2 } from "react-icons/rx";
 import { Modal, Button, Group, rem } from "@mantine/core";
+import { useNavigate } from "react-router-dom";
 export default function Signup({ isOpen, onClose }) {
   const [Email, setEmail] = useState();
   const [Password, setPassword] = useState();
   const [Name, setName] = useState();
+  const [Role, setRole] = useState();
+
   const handleEmail = (event) => {
     setEmail(event.target.value);
   };
@@ -17,6 +22,56 @@ export default function Signup({ isOpen, onClose }) {
   const handleName = (event) => {
     setName(event.target.value);
   };
+  const handleRole = (event) => {
+    setRole(event.target.value);
+  };
+  const navigate = useNavigate();
+  async function SignnUP() {
+    try {
+      const raw = JSON.stringify({
+        name: Name,
+        email: Email,
+        password: Password,
+        role: Role,
+      });
+      const myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+      const requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: raw,
+        redirect: "follow",
+      };
+
+      const response = await fetch(
+        Shared.apiurl + "/api/auth/signup",
+        requestOptions
+      );
+      const result = await response.json();
+      console.log("Response:", result.message);
+      toast.success(`!!: ${result.message}`, {
+        position: "bottom-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      // if (result.message !== "User created successfully") {
+      //   navigate("/dashboard/teacher");
+      //   //setALert(true);
+      // }
+      // if (result.message == "User created successfully") {
+      //   navigate("/student/sdashboard");
+      // }
+    } catch (error) {
+      console.error(
+        "Login failed:",
+        error.response ? error.response.data : error.message
+      );
+    }
+  }
   return (
     <Modal
       withinPortal
@@ -62,6 +117,14 @@ export default function Signup({ isOpen, onClose }) {
             onChange={handleEmail}
             placeholder="E-posta adresinizi giriniz"
           />
+            <label className="text-[#2B2D42] font-medium font-poppins">Rol*</label>
+        <input
+          className="border focus:outline-none border-[#D0D5DD] rounded-lg px-1 py-1 bg-white"
+          type="text"
+          value={Role}
+          onChange={handleRole}
+          placeholder="Rolünüzü girin"
+        />
           <label class="text-[#2B2D42] font-medium font-poppins">Parola*</label>
           <input
             class="border focus:outline-none rounded-lg px-2 py-2 bg-white border-[#D0D5DD]"
@@ -79,12 +142,18 @@ export default function Signup({ isOpen, onClose }) {
           </div>
         </div>
         <div class="flex flex-col gap-3 mt-5">
-          <button class="bg-orange-logo h-10 rounded-lg text-[#FFFFFF] font-semibold font-poppins">
-            Kaydol
-          </button>
-          <button class="bg-white h-10 rounded-lg border border-[#D0D5DD] font-semibold font-poppins">
-            İptal
-          </button>
+        <button
+          onClick={SignnUP}
+          className="bg-orange-logo h-10 rounded-lg text-[#FFFFFF] font-semibold font-poppins"
+        >
+          Kaydol
+        </button>
+        <button
+          onClick={onClose}
+          className="bg-white h-10 rounded-lg border border-[#D0D5DD] font-semibold font-poppins"
+        >
+          İptal
+        </button>
         </div>
       </div>
     </Modal>
