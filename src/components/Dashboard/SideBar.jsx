@@ -52,7 +52,7 @@ export default function Sidebar({ show, setter }) {
     },
     {
       name:"Log Out",
-      route:"/login",
+      route:"/",
       icon:<CiLogout />
     }
   ]
