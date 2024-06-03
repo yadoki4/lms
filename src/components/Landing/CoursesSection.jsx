@@ -17,14 +17,14 @@ const CoursesSection = () => {
       <div className="custom-slider">
         <div className="slider-container">
           <div className="slider">
-            <div className="card-container">
+            <div className="card-container ">
               <div className="card flex-col justify-center items-center">
                 <img className='mx-auto' src={Unity} alt="Unity" />
                 <h3 className='mx-auto text-white w-fit text-lg font-bold   mt-5'>YAŞ 7-8</h3>
                 <h3 className='mx-auto text-white w-fit font-semibold text-4xl mt-5'>Unity</h3>
-                <h3 className='text-white text-lg font-bold  text-center mt-5'>Yaratıcılığınızı ve hayal gücünüzü kullanarak benzersiz oyunlar oluşturun. C# programlama dilini öğrenin."</h3>
+                <h3 className='text-white xl:text-lg text-sm font-bold  text-center mt-5'>Yaratıcılığınızı ve hayal gücünüzü kullanarak benzersiz oyunlar oluşturun. C# programlama dilini öğrenin."</h3>
                 <div className='w-full justify-center flex mt-5'>
-                <button className='text-[#fb8500] bg-white px-4 py-2 mt-16 '>Learn More</button>
+                <button className='text-[#fb8500] bg-white px-4 mb-8 xl:mb-0 py-2 mt-28 '>Learn More</button>
                 </div>
               </div>
               <div className="card flex-col justify-center items-center hover-card">
@@ -49,9 +49,9 @@ const CoursesSection = () => {
                 <img className='mx-auto' src={Roblox} alt="Roblox" />
                 <h3 className='mx-auto text-white w-fit text-lg font-bold  mt-5 '>YAŞ 7-8</h3>
                 <h3 className='mx-auto text-white w-fit font-semibold text-4xl mt-5'>Roblox</h3>
-                <h3 className='text-white text-lg font-bold  text-center mt-5'>Roblox'un heyecan verici evreninin bir parçası olun! Oyunlar, haritalar ve oyun içi ögeler tasarlayın ve sınırsız hayal gücüyle yaratın. En sevdiğiniz oyunu nasıl paraya dönüştüreceğinizi öğrenin."</h3>
+                <h3 className='text-white xl:text-lg text-sm font-bold  text-center mt-5'>Roblox'un heyecan verici evreninin bir parçası olun! Oyunlar, haritalar ve oyun içi ögeler tasarlayın ve sınırsız hayal gücüyle yaratın. En sevdiğiniz oyunu nasıl paraya dönüştüreceğinizi öğrenin."</h3>
                 <div className='w-full justify-center flex mt-5'>
-                <button className='text-[#fb8500] bg-white px-4 py-2 mt-12 '>Learn More</button>
+                <button className='text-[#fb8500] bg-white px-4 py-2 mt-10 '>Learn More</button>
                 </div>
               </div>
               <div className="card flex-col justify-center items-center hover-card">
@@ -75,9 +75,9 @@ const CoursesSection = () => {
                 <img className='mx-auto' src={Python} alt="Python Temelli" />
                 <h3 className='mx-auto text-white w-fit text-lg font-bold mt-5'>YAŞ 7-8</h3>
                 <h3 className='mx-auto text-white w-fit font-semibold text-4xl mt-5'>Python Start</h3>
-                <h3 className='text-white text-lg font-bold  text-center mt-5'>3Python'ın gücüyle tanışın, temellerini öğrenin. Uzman öğretmenler eşliğinde çizimler ve 2D oyunlar ile kodlama sanatını keşfedin! </h3>
+                <h3 className='text-white xl:text-lg text-sm font-bold  text-center mt-5'>3Python'ın gücüyle tanışın, temellerini öğrenin. Uzman öğretmenler eşliğinde çizimler ve 2D oyunlar ile kodlama sanatını keşfedin! </h3>
                 <div className='w-full justify-center flex mt-5'>
-                <button className='text-[#fb8500] bg-white px-4 py-2 mt-8 '>Learn More</button>
+                <button className='text-[#fb8500] bg-white px-4 py-2 mt-20 '>Learn More</button>
                 </div>
               </div>
               <div className="card flex-col justify-center items-center hover-card">
@@ -102,9 +102,9 @@ const CoursesSection = () => {
                 <img className='mx-auto' src={Python2} alt="Python Yaz Okulu" />
                 <h3 className='mx-auto text-white w-fit text-lg font-bold   mt-5'>YAŞ 7-8</h3>
                 <h3 className='mx-auto text-white w-fit font-semibold text-4xl mt-5'>Python Yaz Okulu</h3>
-                <h3 className='text-white text-lg font-bold  text-center mt-5'>Python temellerine giriş, temel syntax, kodlama yardımıya çizimler, 2D oyun geliştirme.</h3>
+                <h3 className='text-white xl:text-lg text-sm font-bold  text-center mt-5'>Python temellerine giriş, temel syntax, kodlama yardımıya çizimler, 2D oyun geliştirme.</h3>
                 <div className='w-full justify-center flex mt-5'>
-                <button className='text-[#fb8500] bg-white px-4 py-2 mt-6 '>Learn More</button>
+                <button className='text-[#fb8500] bg-white px-4 py-2 mt-[100px] '>Learn More</button>
                 </div>
               </div>
               <div className="card flex-col justify-center items-center hover-card">
@@ -129,9 +129,9 @@ const CoursesSection = () => {
                 <img className='mx-auto' src={Python} alt="Python Profesyonel" />
                 <h3 className='mx-auto text-white w-fit text-lg font-bold   mt-5'>YAŞ 7-8</h3>
                 <h3 className='mx-auto text-white w-fit font-semibold text-4xl mt-5'>Python PRO</h3>
-                <h3 className='text-white text-lg font-bold  text-center mt-5'>Python deneyiminizi bir üst seviyeye taşıyın.  Etkileyici projeler oluşturun ve bunları CV'nize ekleyerek erkenden kariyer fırsatlarını keşfedin. Geleceğin yıldızları için idealdir.</h3>
+                <h3 className='text-white xl:text-lg text-sm font-bold  text-center mt-5'>Python deneyiminizi bir üst seviyeye taşıyın.  Etkileyici projeler oluşturun ve bunları CV'nize ekleyerek erkenden kariyer fırsatlarını keşfedin. Geleceğin yıldızları için idealdir.</h3>
                 <div className='w-full justify-center flex mt-5'>
-                <button className='text-[#fb8500] bg-white px-4 py-2  '>Learn More</button>
+                <button className='text-[#fb8500] bg-white px-4 py-2  mt-12 '>Learn More</button>
                 </div>
               </div>
               <div className="card flex-col justify-center items-center hover-card">

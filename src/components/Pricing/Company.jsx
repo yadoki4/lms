@@ -11,32 +11,34 @@ const Company = () => {
   return (
     <div className="bg-white mt-10">
       <div className="bg-orange-1 px-10 py-10 flex justify-between">
-       <div>
-<div className="flex items-center mt-4">
-  <img src={Tick} alt="" />
-  <p className="ml-2 font-medium text-3xl">Çocuklara yüksek kaliteli <br /> kodlama eğitimi sunuyoruz</p>
-</div>
-<div className="flex items-center mt-4">
-  <img src={Tick} alt="" />
-  <p className="ml-2 font-medium text-3xl">Teknolojiyi sevdiriyoruz ve yenilikçi düşünceyi <br /> küçük yaştan itibaren teşvik ediyoruz</p>
-</div>
-<div className="flex items-center mt-4">
-  <img src={Tick} alt="" />
-  <p className="ml-2 font-medium text-3xl">Deneyimli eğitmenler ile bu <br /> deneyimi garantiliyoruz</p>
-</div>
-<div className="flex items-center mt-4">
-  <img src={Tick} alt="" />
-  <p className="ml-2 font-medium text-3xl">Etkiileşimli müfredat ile ilgi çekici bir <br /> öğrenme deneyimi sunuyoruz</p>
-</div>
-<div className="flex items-center mt-4">
-  <img src={Tick} alt="" />
-  <p className="ml-2 font-medium text-3xl">Her öğrencinin ihtiyaçlarına özel olarak <br /> hazırlanmış Ubicraft Platform ile çocuğunuzun <br /> kariyerini şimdiden şekillendiriyoruz</p>
-</div>
 
-       </div>
+
        <div>
-<img src={Heroimg} alt="" />
-<div className=" flex  rounded-lg mt-10 justify-center  items-center">
+<div className="flex justify-center">
+<img className="xl:hidden flex" src={Heroimg} alt="" />
+
+</div>
+<div className="flex items-center mt-4">
+  <img src={Tick} alt="" />
+  <p className="ml-2 font-medium lg:text-3xl">Çocuklara yüksek kaliteli <br className="hidden xl:block" /> kodlama eğitimi sunuyoruz</p>
+</div>
+<div className="flex items-center mt-4">
+  <img src={Tick} alt="" />
+  <p className="ml-2 font-medium lg:text-3xl">Teknolojiyi sevdiriyoruz ve yenilikçi düşünceyi <br className="hidden xl:block" /> küçük yaştan itibaren teşvik ediyoruz</p>
+</div>
+<div className="flex items-center mt-4">
+  <img src={Tick} alt="" />
+  <p className="ml-2 font-medium lg:text-3xl">Deneyimli eğitmenler ile bu <br className="hidden xl:block" /> deneyimi garantiliyoruz</p>
+</div>
+<div className="flex items-center mt-4">
+  <img src={Tick} alt="" />
+  <p className="ml-2 font-medium lg:text-3xl">Etkiileşimli müfredat ile ilgi çekici bir <br className="hidden xl:block" /> öğrenme deneyimi sunuyoruz</p>
+</div>
+<div className="flex items-center mt-4">
+  <img src={Tick} alt="" />
+  <p className="ml-2 font-medium lg:text-3xl">Her öğrencinin ihtiyaçlarına özel olarak <br className="hidden xl:block" /> hazırlanmış Ubicraft Platform ile çocuğunuzun <br className="hidden xl:block" /> kariyerini şimdiden şekillendiriyoruz</p>
+</div>
+<div className=" xl:hidden flex  rounded-lg mt-10 justify-center  items-center">
             <button
               onClick={() => {}}
               className="bg-orange-logo text-sm text-white font-poppins font-bold   rounded-xl w-60 h-11
@@ -46,6 +48,19 @@ const Company = () => {
             </button>
           </div>
        </div>
+       <div>
+<img className="xl:flex hidden" src={Heroimg} alt="" />
+<div className=" xl:flex hidden  rounded-lg mt-10 justify-center  items-center">
+            <button
+              onClick={() => {}}
+              className="bg-orange-logo text-sm text-white font-poppins font-bold   rounded-xl w-60 h-11
+           justify-center items-center px-2 py-2"
+            >
+              Ücretsiz deneme dersi
+            </button>
+          </div>
+       </div>
+       
       </div>
 
 
@@ -75,10 +90,10 @@ const Company = () => {
               "Eğitmenlerimiz, çocuklarla iletişim kurma konusunda deneyimli ve alanında uzmandır. Her öğrenciye bireysel ilgi göstererek, her birinin potansiyelini en üst düzeye çıkarmasına yardımcı olurlar.Kurs süresince öğrencinin gelişimini takip etmek adına sizinle sürekli iletişim halinde olacaklar."
             }
           />
-          <img src={Card1} alt="" />
+          <img className="hidden lg:block" src={Card1} alt="" />
         </div>
         <div className="flex  w-11/12 justify-between">
-          <img src={Card2} alt="" />
+          <img className="hidden lg:block" src={Card2} alt="" />
           <ChooseCard
             number={2}
             heading1={"Yüksek Etkileşimli Öğrenme Deneyimi:"}
@@ -95,10 +110,10 @@ const Company = () => {
               "Kurs süresince öğretmenlerimiz sadece ders esnasında değil her an yanınızda! Her modülde veli geri bildirimleri, her 8 haftada bir veli toplantısı ve özelleştirilmiş ödev takip sistemimiz ile hata payını sıfıra indirin. "
             }
           />
-          <img src={Card3}alt="" />
+          <img className="hidden lg:block" src={Card3}alt="" />
         </div>
         <div className="flex  w-11/12 justify-between">
-          <img src={Card4} alt="" />
+          <img className="hidden lg:block" src={Card4} alt="" />
           <ChooseCard
             number={4}
             heading1={"Modern Eğitim Teknolojileri"}
@@ -115,7 +130,7 @@ const Company = () => {
               "Haftanın herhangi bir gününü ve sizin için uygun olan bir saat dilimini seçin ve öğrenme deneyiminize hemen başlayın. Programınızda herhangi bir değişiklik olduğunda, hızlı ve kolay bir şekilde ders gününüzü ve saatinizi değiştirin, böylece öğrenme süreciniz kesintiye uğramadan devam etsin."
             }
           />
-          <img src={Card5} alt="" />
+          <img  className="hidden lg:block" src={Card5} alt="" />
         </div>
       </div>
     </div>

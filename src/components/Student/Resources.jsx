@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import SearchBar from "../../customComponents/SearchBar";
 import "./Progresbar.css";
+
 const Resources = () => {
-  const Array = [
+  const filesArray = [
     {
       id: 1,
       filename: "Database-MySQL.pdf",
@@ -39,27 +40,27 @@ const Resources = () => {
       fileType: "docx",
     },
   ];
-  //const [showView, setShowView] = useState(false);
+
   const ProgressBar = ({ total, obtained, filename }) => {
     const [progress, setProgress] = useState((obtained / total) * 100);
 
     return (
-      <div className=" flex-col w-2/3 justify-between">
-        <div className="flex  justify-between gap-4">
-          <p className="mt-3 font-poppins font-medium text-xs text-[#2B2D42] ">
+      <div className="w-full flex flex-col justify-between">
+        <div className="flex justify-between gap-4">
+          <p className="mt-3 font-poppins font-medium text-xs text-[#2B2D42]">
             {filename}
           </p>
-          <p className="mt-3 font-poppins font-medium text-xs text-[#2B2D42] ">
+          <p className="mt-3 font-poppins font-medium text-xs text-[#2B2D42]">
             350 KB
           </p>
         </div>
-        <div className="progress-bar flex w-3/4">
+        <div className="progress-bar flex w-full mt-2">
           <div
-            className="  progress justify-center items-center"
+            className="progress"
             style={{ width: `${progress}%`, backgroundColor: "#FB8500" }}
           ></div>
           <div
-            className=" remaining-progress justify-center items-center"
+            className="remaining-progress"
             style={{ width: `${100 - progress}%`, backgroundColor: "grey" }}
           ></div>
         </div>
@@ -68,38 +69,30 @@ const Resources = () => {
   };
 
   return (
-    <div className="  gap-4 mx-16">
-      {Array.map((item) => (
-        <div className=" flex justify-between px-2 mt-3 py-2 gap-5 bg-white rounded-xl ">
-          <div className="flex-1 flex  gap-6">
+    <div className="gap-4 mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-32 2xl:mx-40">
+      {filesArray.map((item) => (
+        <div key={item.id} className="flex flex-col sm:flex-row justify-between px-2 mt-3 py-2 gap-5 bg-white rounded-xl">
+          <div className="flex-1 flex gap-6">
             {item.fileType === "pdf" && (
-              <div className=" flex justify-center items-center ">
-                <img src="/assets/pdficon.svg" alt="pdf"></img>
+              <div className="flex justify-center items-center">
+                <img src="/assets/pdficon.svg" alt="pdf" className="h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10" />
               </div>
             )}
             {item.fileType === "docx" && (
-              <div className=" flex justify-center items-center ">
-                <img src="/assets/wordicon.svg" alt="pdf"></img>
+              <div className="flex justify-center items-center">
+                <img src="/assets/wordicon.svg" alt="docx" className="h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10" />
               </div>
             )}
             {item.fileType === "xls" && (
-              <div className=" flex justify-center items-center ">
-                <img src="/assets/excelicon.svg" alt="pdf"></img>
+              <div className="flex justify-center items-center">
+                <img src="/assets/excelicon.svg" alt="xls" className="h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10" />
               </div>
             )}
-            <div className=" flex-col w-2/3 justify-between">
-              <div className="mt-2">
-                <ProgressBar
-                  className="mt-4"
-                  total={6400}
-                  obtained={4200}
-                  filename={item.filename}
-                />
-              </div>
+            <div className="flex flex-col w-full justify-between">
+              <ProgressBar total={6400} obtained={4200} filename={item.filename} />
             </div>
           </div>
-
-          <button className="font-poppins text-sm text-[#ffffff] w-36 h-12 mt-3 rounded-[70px]  font-bold bg-orange-logo px-4">
+          <button className="font-poppins text-sm text-[#ffffff] w-full sm:w-36 h-12 mt-3 rounded-[70px] font-bold bg-orange-logo px-4">
             Download
           </button>
         </div>

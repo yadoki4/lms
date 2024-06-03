@@ -12,7 +12,7 @@ const TeacherStudentCard = ({mainImg,title, paragraph, t1, alt1, title1, t2, alt
         <div className="text-2xl font-semibold mb-2 font-Poppins">
           {title}
         </div>
-        <p className="text-lg mb-6 font-normal font-Poppins text-black-1">
+        <p className="lg:text-lg mb-6 font-normal font-Poppins text-black-1">
           {paragraph}
         </p>
         <ul className="list-none py-2">

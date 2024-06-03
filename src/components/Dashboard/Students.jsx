@@ -257,8 +257,8 @@ const Students = () => {
         <div className="w-ful">
           <SearchBar></SearchBar>
           <div className="w-ful flex items-center mx-8 mt-8">
-            <div className=" flex justify-between ">
-              <div>
+            <div >
+              <div className=" flex justify-center " >
                 <button
                   onClick={() => {
                     setallclasses(false);
@@ -271,6 +271,7 @@ const Students = () => {
                   All classes
                 </button>
               </div>
+              <div className="flex justify-between">
               <div>
                 <button
                   onClick={() => {
@@ -295,213 +296,273 @@ const Students = () => {
                   Class B
                 </button>
               </div>
+              </div>
             </div>
           </div>
           <div className="flex flex-col gap-4 mx-6 mt-4">
-            <div className="flex w-full   rounded-xl h-12 bg-white mt-4  py-2">
-              <div className=" flex items-center justify-between  w-full">
-                <p className="flex-1 font-poppins text-center font-medium text-[#000000] text-sm">
-                  Course
-                  <br />
-                  No.
-                </p>
-                <p className="flex-1 font-poppins text-center font-medium text-[#000000] text-sm">
-                  Name
-                </p>
-                <p className=" flex-1 font-poppins text-center font-medium text-[#000000] text-sm">
-                  Balance
-                </p>
-                <p className="flex-1 font-poppins text-center font-medium text-[#000000] text-sm">
-                  Email Address
-                </p>
-                <p className="flex-1 font-poppins text-center font-medium text-[#000000] text-sm">
-                  Phone Number
-                </p>
-                <p className="flex-1 font-poppins text-center font-medium text-[#000000] text-sm">
-                  Guardian
-                </p>
-                <p className="flex-1 font-poppins text-center font-medium text-[#000000] text-sm">
-                  Last Active Date
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col w-full   rounded-xl  bg-white mt-4  py-2">
-              <div className=" flex items-center justify-between  w-full ">
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  1
-                </p>
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  Samantha <br />
-                  Johnson
-                </p>
-                <p className="flex-1  font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  11 lessons
-                </p>
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  sam.johnson@example.com
-                </p>
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  555-123-4567
-                </p>
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  Michael Smith
-                  <br /> (Father)
-                </p>
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  2024-02-20
-                </p>
-              </div>
-              <div className="flex flex-row">
-                <div className="flex flex-[5] flex-wrap justify-start gap-4 pl-6 pt-6 pb-4">
-                  {lectureDetails.map((item) => (
-                    <div className=" flex flex-col w-8">
-                      <p className="font-poppins text-center font-regular text-[#2B2D42] text-sm mb-1 font-mediu">
-                        {item.day}
-                      </p>
-                      <div
-                        className={`w-full h-1.5 rounded ${
-                          JSON.parse(item.status) ? "bg-[green]" : "bg-[red]"
-                        }`}
-                      />
-                    </div>
-                  ))}
-                </div>
-                <div className="flex flex-[2]" />
-              </div>
-            </div>
-            <div className="flex flex-col w-full   rounded-xl  bg-white mt-4  py-2">
-              <div className=" flex items-center justify-between  w-full ">
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  1
-                </p>
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  Samantha <br />
-                  Johnson
-                </p>
-                <p className="flex-1  font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  11 lessons
-                </p>
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  sam.johnson@example.com
-                </p>
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  555-123-4567
-                </p>
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  Michael Smith
-                  <br /> (Father)
-                </p>
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  2024-02-20
-                </p>
-              </div>
-              <div className="flex flex-row">
-                <div className="flex flex-[5] flex-wrap justify-start gap-4 pl-6 pt-6 pb-4">
-                  {lectureDetails.map((item) => (
-                    <div className=" flex flex-col w-8">
-                      <p className="font-poppins text-center font-regular text-[#2B2D42] text-sm mb-1 font-mediu">
-                        {item.day}
-                      </p>
-                      <div
-                        className={`w-full h-1.5 rounded ${
-                          JSON.parse(item.status) ? "bg-[green]" : "bg-[red]"
-                        }`}
-                      />
-                    </div>
-                  ))}
-                </div>
-                <div className="flex flex-[2]" />
-              </div>
-            </div>
-            <div className="flex flex-col w-full   rounded-xl  bg-white mt-4  py-2">
-              <div className=" flex items-center justify-between  w-full ">
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  1
-                </p>
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  Samantha <br />
-                  Johnson
-                </p>
-                <p className="flex-1  font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  11 lessons
-                </p>
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  sam.johnson@example.com
-                </p>
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  555-123-4567
-                </p>
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  Michael Smith
-                  <br /> (Father)
-                </p>
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  2024-02-20
-                </p>
-              </div>
-              <div className="flex flex-row">
-                <div className="flex flex-[5] flex-wrap justify-start gap-4 pl-6 pt-6 pb-4">
-                  {lectureDetails.map((item) => (
-                    <div className=" flex flex-col w-8">
-                      <p className="font-poppins text-center font-regular text-[#2B2D42] text-sm mb-1 font-mediu">
-                        {item.day}
-                      </p>
-                      <div
-                        className={`w-full h-1.5 rounded ${
-                          JSON.parse(item.status) ? "bg-[green]" : "bg-[red]"
-                        }`}
-                      />
-                    </div>
-                  ))}
-                </div>
-                <div className="flex flex-[2]" />
-              </div>
-            </div>
-            <div className="flex flex-col w-full   rounded-xl  bg-white mt-4  py-2">
-              <div className=" flex items-center justify-between  w-full ">
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  1
-                </p>
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  Samantha <br />
-                  Johnson
-                </p>
-                <p className="flex-1  font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  11 lessons
-                </p>
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  sam.johnson@example.com
-                </p>
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  555-123-4567
-                </p>
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  Michael Smith
-                  <br /> (Father)
-                </p>
-                <p className="flex-1 font-poppins text-center font-regular text-[#2B2D42] text-sm">
-                  2024-02-20
-                </p>
-              </div>
-              <div className="flex flex-row">
-                <div className="flex flex-[5] flex-wrap justify-start gap-4 pl-6 pt-6 pb-4">
-                  {lectureDetails.map((item) => (
-                    <div className=" flex flex-col w-8">
-                      <p className="font-poppins text-center font-regular text-[#2B2D42] text-sm mb-1 font-mediu">
-                        {item.day}
-                      </p>
-                      <div
-                        className={`w-full h-1.5 rounded ${
-                          JSON.parse(item.status) ? "bg-[green]" : "bg-[red]"
-                        }`}
-                      />
-                    </div>
-                  ))}
-                </div>
-                <div className="flex flex-[2]" />
-              </div>
-            </div>
+  <div className="w-full rounded-xl bg-white mt-4 py-2">
+    <div className="flex flex-wrap items-center justify-between w-full">
+    <p className="hidden sm:flex w-full sm:w-auto  font-poppins text-center font-medium text-[#000000] text-xs sm:text-sm md:text-base lg:text-lg">
+        Course
+        <br className="block sm:hidden" />
+        No.
+      </p>
+      <p className="hidden sm:flex w-full sm:w-auto  font-poppins text-center font-medium text-[#000000] text-xs sm:text-sm md:text-base lg:text-lg">
+        Name
+      </p>
+      <p className="hidden sm:flex w-full sm:w-auto  font-poppins text-center font-medium text-[#000000] text-xs sm:text-sm md:text-base lg:text-lg">
+        Balance
+      </p>
+      <p className="hidden sm:flex w-full sm:w-auto  font-poppins text-center font-medium text-[#000000] text-xs sm:text-sm md:text-base lg:text-lg">
+        Email Address
+      </p>
+      <p className="hidden sm:flex w-full sm:w-auto  font-poppins text-center font-medium text-[#000000] text-xs sm:text-sm md:text-base lg:text-lg">
+        Phone Number
+      </p>
+      <p className="hidden sm:flex w-full sm:w-auto  font-poppins text-center font-medium text-[#000000] text-xs sm:text-sm md:text-base lg:text-lg">
+        Guardian
+      </p>
+      <p className="hidden sm:flex w-full sm:w-auto  font-poppins text-center font-medium text-[#000000] text-xs sm:text-sm md:text-base lg:text-lg">
+        Last Active Date
+      </p>
+     <div className="flex sm:hidden w-full justify-between">
+    
+     <p className="w-full sm:w-auto  font-poppins text-center font-medium text-[#000000] text-xs sm:text-sm md:text-base lg:text-lg">
+        Course
+        <br className="block sm:hidden" />
+        No.
+      </p>
+      <p className="w-full sm:w-auto  font-poppins text-center font-medium text-[#000000] text-xs sm:text-sm md:text-base lg:text-lg">
+        Name
+      </p>
+      <p className="w-full sm:w-auto  font-poppins text-center font-medium text-[#000000] text-xs sm:text-sm md:text-base lg:text-lg">
+        Balance
+      </p>
+      <p className="w-full sm:w-auto  font-poppins text-center font-medium text-[#000000] text-xs sm:text-sm md:text-base lg:text-lg">
+        Email Address
+      </p>
+     </div>
+     <div className="flex sm:hidden w-full justify-between"> <p className="w-full sm:w-auto  font-poppins text-center font-medium text-[#000000] text-xs sm:text-sm md:text-base lg:text-lg">
+        Phone Number
+      </p>
+      <p className="w-full sm:w-auto  font-poppins text-center font-medium text-[#000000] text-xs sm:text-sm md:text-base lg:text-lg">
+        Guardian
+      </p>
+      <p className="w-full sm:w-auto  font-poppins text-center font-medium text-[#000000] text-xs sm:text-sm md:text-base lg:text-lg">
+        Last Active Date
+      </p></div>
+    </div>
+  </div>
+
+  <div className="flex flex-col w-full rounded-xl bg-white mt-4 py-2">
+    <div className="flex flex-wrap items-center justify-between w-full">
+    <p className="hidden sm:flex  w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        1
+      </p>
+      <p className="hidden sm:flex  w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        Samantha <br className="block sm:hidden" /> Johnson
+      </p>
+      <p className="hidden sm:flex  w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        11 lessons
+      </p>
+      <p className="hidden sm:flex  w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        sam.johnson@example.com
+      </p>
+      <p className="hidden sm:flex  w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        555-123-4567
+      </p>
+      <p className="hidden sm:flex  w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        Michael Smith <br className="block sm:hidden" /> (Father)
+      </p>
+      <p className="hidden sm:flex  w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        2024-02-20
+      </p>
+      <div className="flex sm:hidden w-full justify-between">
+      <p className="w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        1
+      </p>
+      <p className="w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        Samantha <br className="block sm:hidden" /> Johnson
+      </p>
+      <p className="w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        11 lessons
+      </p>
+      <p className="w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        sam.johnson@example.com
+      </p>
+      </div>
+      <div className="flex sm:hidden w-full justify-between">
+      <p className="w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        555-123-4567
+      </p>
+      <p className="w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        Michael Smith  (Father)
+      </p>
+      <p className="w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        2024-02-20
+      </p>
+      </div>
+     
+    </div>
+    <div className="flex flex-row">
+      <div className="flex flex-[5] flex-wrap justify-start gap-4 pl-6 pt-6 pb-4">
+        {lectureDetails.map((item) => (
+          <div className="flex flex-col w-8" key={item.day}>
+            <p className="font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base mb-1">
+              {item.day}
+            </p>
+            <div
+              className={`w-full h-1.5 rounded ${
+                JSON.parse(item.status) ? "bg-[green]" : "bg-[red]"
+              }`}
+            />
           </div>
+        ))}
+      </div>
+      <div className="flex flex-[2]" />
+    </div>
+  </div>
+  <div className="flex flex-col w-full rounded-xl bg-white mt-4 py-2">
+    <div className="flex flex-wrap items-center justify-between w-full">
+    <p className="hidden sm:flex  w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        1
+      </p>
+      <p className="hidden sm:flex  w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        Samantha <br className="block sm:hidden" /> Johnson
+      </p>
+      <p className="hidden sm:flex  w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        11 lessons
+      </p>
+      <p className="hidden sm:flex  w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        sam.johnson@example.com
+      </p>
+      <p className="hidden sm:flex  w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        555-123-4567
+      </p>
+      <p className="hidden sm:flex  w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        Michael Smith <br className="block sm:hidden" /> (Father)
+      </p>
+      <p className="hidden sm:flex  w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        2024-02-20
+      </p>
+      <div className="flex sm:hidden w-full justify-between">
+      <p className="w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        1
+      </p>
+      <p className="w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        Samantha <br className="block sm:hidden" /> Johnson
+      </p>
+      <p className="w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        11 lessons
+      </p>
+      <p className="w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        sam.johnson@example.com
+      </p>
+      </div>
+      <div className="flex sm:hidden w-full justify-between">
+      <p className="w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        555-123-4567
+      </p>
+      <p className="w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        Michael Smith  (Father)
+      </p>
+      <p className="w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        2024-02-20
+      </p>
+      </div>
+     
+    </div>
+    <div className="flex flex-row">
+      <div className="flex flex-[5] flex-wrap justify-start gap-4 pl-6 pt-6 pb-4">
+        {lectureDetails.map((item) => (
+          <div className="flex flex-col w-8" key={item.day}>
+            <p className="font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base mb-1">
+              {item.day}
+            </p>
+            <div
+              className={`w-full h-1.5 rounded ${
+                JSON.parse(item.status) ? "bg-[green]" : "bg-[red]"
+              }`}
+            />
+          </div>
+        ))}
+      </div>
+      <div className="flex flex-[2]" />
+    </div>
+  </div>
+  <div className="flex flex-col w-full rounded-xl bg-white mt-4 py-2">
+    <div className="flex flex-wrap items-center justify-between w-full">
+    <p className="hidden sm:flex  w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        1
+      </p>
+      <p className="hidden sm:flex  w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        Samantha <br className="block sm:hidden" /> Johnson
+      </p>
+      <p className="hidden sm:flex  w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        11 lessons
+      </p>
+      <p className="hidden sm:flex  w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        sam.johnson@example.com
+      </p>
+      <p className="hidden sm:flex  w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        555-123-4567
+      </p>
+      <p className="hidden sm:flex  w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        Michael Smith <br className="block sm:hidden" /> (Father)
+      </p>
+      <p className="hidden sm:flex  w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        2024-02-20
+      </p>
+      <div className="flex sm:hidden w-full justify-between">
+      <p className="w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        1
+      </p>
+      <p className="w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        Samantha <br className="block sm:hidden" /> Johnson
+      </p>
+      <p className="w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        11 lessons
+      </p>
+      <p className="w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        sam.johnson@example.com
+      </p>
+      </div>
+      <div className="flex sm:hidden w-full justify-between">
+      <p className="w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        555-123-4567
+      </p>
+      <p className="w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        Michael Smith  (Father)
+      </p>
+      <p className="w-full sm:w-auto  font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base lg:text-lg">
+        2024-02-20
+      </p>
+      </div>
+     
+    </div>
+    <div className="flex flex-row">
+      <div className="flex flex-[5] flex-wrap justify-start gap-4 pl-6 pt-6 pb-4">
+        {lectureDetails.map((item) => (
+          <div className="flex flex-col w-8" key={item.day}>
+            <p className="font-poppins text-center font-regular text-[#2B2D42] text-xs sm:text-sm md:text-base mb-1">
+              {item.day}
+            </p>
+            <div
+              className={`w-full h-1.5 rounded ${
+                JSON.parse(item.status) ? "bg-[green]" : "bg-[red]"
+              }`}
+            />
+          </div>
+        ))}
+      </div>
+      <div className="flex flex-[2]" />
+    </div>
+  </div>
+ 
+
+ 
+</div>
+
         </div>
       )}
       {ClassA && (

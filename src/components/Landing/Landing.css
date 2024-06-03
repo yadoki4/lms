@@ -33,7 +33,6 @@
     flex-direction: column;
   }
   .small {
-    background-color: rgb(251, 133, 0);
     border-radius: 12px;
   }
 }

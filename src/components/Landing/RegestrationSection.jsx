@@ -112,7 +112,7 @@ const RegestrationSection = () => {
           </div>
         </div>
       </div>
-      <img className="absolute right-0 mt-40" src={Controller} alt="" />
+      <img className="absolute hidden xl:block right-0 mt-40" src={Controller} alt="" />
       <div className=" flex  rounded-lg mt-10 justify-center  items-center">
         <button
           onClick={() => {}}

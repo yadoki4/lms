@@ -9,7 +9,7 @@ const ChooseCard = ({
   heading5,
 }) => {
   return (
-    <div className="blah flex justify-center items-center rounded-[10px] px-5 py-4 gap-6 bg-[#FCE0A2] w-1/2">
+    <div className="blah flex justify-center items-center rounded-[10px] px-5 py-4 gap-6 bg-[#FCE0A2] w-2/3">
       <div className="circle1 flex w-24 h-24 rounded-full items-center justify-center bg-white">
         <p className="text-center font-poppins font-semibold text-3xl text-[#000000]">
           {number}

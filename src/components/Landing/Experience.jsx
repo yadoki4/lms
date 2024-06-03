@@ -5,9 +5,9 @@ const Experience = () => {
     <div className="bg-white justify-center items-center mt-14 flex flex-col gap-4 ">
      
       <div className=" flex  bg-white rounded-lg mt-4  ">
-        <p className="text-center text-[#2B2D42] font-poppins font-medium text-xl">
-        <span className="text-[#FB8500]"> Ücretsiz deneme dersimizle </span> heyecan verici bir kodlama macerasına başlayın. Uzman bir <br />
-öğretmenimiz eşliğinde <span className="text-[#FB8500]"> Ubicraft </span> platformunu deneyimleyin ve sadece bir oturumda<br />
+        <p className="text-center text-[#2B2D42] font-poppins font-medium  lg:text-xl">
+        <span className="text-[#FB8500]"> Ücretsiz deneme dersimizle </span> heyecan verici bir kodlama macerasına başlayın. Uzman bir <br className="hidden lg:block" />
+öğretmenimiz eşliğinde <span className="text-[#FB8500]"> Ubicraft </span> platformunu deneyimleyin ve sadece bir oturumda<br className="hidden lg:block"r />
 çocuğunuzun<span className="text-[#FB8500]"> sınırsız  </span> potansiyelini ortaya çıkarın.
         </p>
       </div>

@@ -1,65 +1,61 @@
 import React from "react";
 import NotificationCard from "../../customComponents/notificationCard";
 import SearchBar from "../../customComponents/SearchBar";
+
 const StudNotification = () => {
-  const Array = [
+  const notificationsArray = [
     {
       id: 1,
-      notificationDiscription:
-        "Selena comments on your posts about Algorithm tasks",
+      notificationDescription: "Selena comments on your posts about Algorithm tasks",
       notificationTime: "20 minutes ago",
       notificationType: "Comment",
     },
     {
       id: 2,
-      notificationDiscription:
-        "Well done! You have submitted your tasks of Introduction to Python",
+      notificationDescription: "Well done! You have submitted your tasks of Introduction to Python",
       notificationTime: "Yesterday",
       notificationType: "Submit",
     },
     {
       id: 3,
-      notificationDiscription:
-        "Mr.John add new quiz and some tasks on PHP course",
+      notificationDescription: "Mr.John add new quiz and some tasks on PHP course",
       notificationTime: "20 minutes ago",
       notificationType: "Add",
     },
     {
       id: 4,
-      notificationDiscription:
-        "Your task is overdue for 13 hours and 25 minutes",
+      notificationDescription: "Your task is overdue for 13 hours and 25 minutes",
       notificationTime: "22 January 2024",
       notificationType: "OverDue",
     },
     {
       id: 5,
-      notificationDiscription:
-        "Selena comments on your posts about Algorithm tasks",
+      notificationDescription: "Selena comments on your posts about Algorithm tasks",
       notificationTime: "20 minutes ago",
       notificationType: "Comment",
     },
     {
       id: 6,
-      notificationDiscription:
-        "Well done! You have submitted your tasks of Introduction to Python",
+      notificationDescription: "Well done! You have submitted your tasks of Introduction to Python",
       notificationTime: "Yesterday",
       notificationType: "Submit",
     },
     {
       id: 7,
-      notificationDiscription:
-        "Mr.John add new quiz and some tasks on PHP course",
+      notificationDescription: "Mr.John add new quiz and some tasks on PHP course",
       notificationTime: "20 minutes ago",
       notificationType: "Add",
     },
   ];
+
   return (
-    <div>
+    <div className="p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20 2xl:p-24">
       <SearchBar />
-      <div className="flex  flex-col gap-4 mx-20 mt-4">
-        {Array.map((item) => (
+      <div className="flex flex-col gap-4 mt-4">
+        {notificationsArray.map((item) => (
           <NotificationCard
-            notificationDiscription={item.notificationDiscription}
+            key={item.id}
+            notificationDescription={item.notificationDescription}
             notificationTime={item.notificationTime}
             notificationType={item.notificationType}
           />
